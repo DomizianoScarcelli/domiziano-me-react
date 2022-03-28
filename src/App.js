@@ -32,6 +32,7 @@ export default function App() {
 							title="Pathfinder Visualizer"
 							content="Web app that allows the user to select two  points and see the shortest path between them.
 							The app is developed using p5.js"
+							github="https://github.com/DomizianoScarcelli/pathfinder-visualizer"
 						/>
 						<Project
 							textColor="#ffffff"

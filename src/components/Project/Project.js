@@ -36,8 +36,18 @@ const Project = (props) => {
 				<div className={styles.content}> {props.content}</div>
 				{isHover && (
 					<motion.div className={styles.links}>
-						<div className={styles.github + " " + styles.icon}></div>
-						<div className={styles.demo + " " + styles.icon}></div>
+						<div
+							className={styles.github + " " + styles.icon}
+							onClick={() => {
+								window.open(props.github, "_blank")
+							}}
+						></div>
+						<div
+							className={styles.demo + " " + styles.icon}
+							onClick={() => {
+								window.open(props.demo, "_blank")
+							}}
+						></div>
 					</motion.div>
 				)}
 			</div>
