@@ -7,7 +7,7 @@ const Container = (props) => {
 	}
 
 	return (
-		<div className={styles.container}>
+		<div className={styles.container} id={`${props.title.toLowerCase()}`}>
 			<div className={styles.title} style={titleStyle}>
 				{props.title}
 			</div>

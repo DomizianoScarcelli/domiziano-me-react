@@ -8,7 +8,7 @@ const Navbar = () => {
 		<nav className={styles.navbar}>
 			{items.map((item) => {
 				return (
-					<a className={styles.item} href="#projects">
+					<a className={styles.item} href={`#${item.toLowerCase()}`}>
 						{item}
 					</a>
 				)

@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Project from "./components/Project/Project"
 import Container from "./components/Container/Container"
 import HamburgerMenu from "./components/HamburgerMenu/HamburgerMenu"
+import ContactForm from "./components/ContactForm/ContactForm"
 
 export default function App() {
 	return (
@@ -68,24 +69,7 @@ export default function App() {
 				</Container>
 
 				<Container title="Contact me." titleColor="#ef6e64">
-					<form action="https://formsubmit.co/scarcelli.domiziano@gmail.com" method="POST" name="contactModule" class="contactModule">
-						{/* <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> */}
-						<input type="hidden" name="_autoresponse" value="Thanks for contacting me, I will answer ASAP!" />
-
-						<div class="contentContainer_body-contact">
-							<div class="contentContainer__title contentContainer__title--small green">Name.</div>
-							<input type="text" name="name" class="contactModule__input" />
-						</div>
-						<div class="contentContainer_body-contact">
-							<div class="contentContainer__title contentContainer__title--small yellow">Email.</div>
-							<input type="email" name="email" class="contactModule__input" />
-						</div>
-						<div class="contentContainer_body-contact largeModule">
-							<div class="contentContainer__title contentContainer__title--small lightGreen">Message.</div>
-							<textarea name="message" class="contactModule__input largeModule"></textarea>
-						</div>
-					</form>
-					<div class="submitButton center-horizontally">Send.</div>
+					<ContactForm />
 				</Container>
 
 				<a class="backToTop center-horizontally" id="backToTopButton" href="#topContainer">

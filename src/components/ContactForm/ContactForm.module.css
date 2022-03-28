@@ -1,0 +1,59 @@
+.container {
+	padding: 2rem 0 2rem 0;
+}
+.field {
+	position: relative;
+	border-radius: 1rem;
+	margin-top: 2rem;
+	margin-left: 4rem; /*TODO cambia sta cosa*/
+	height: 3rem;
+	width: 30%;
+	background-color: var(--color-main-background);
+}
+
+.bigField {
+	margin-right: 4rem;
+	width: auto;
+	height: 10rem;
+}
+
+.largeModule {
+	resize: none;
+	width: 100% !important;
+	height: 8.75rem !important;
+	padding: 1rem 1rem 0 1rem;
+	font-family: "Inter", sans-serif;
+}
+
+.title {
+	position: absolute;
+	top: -0.85rem;
+	left: 0.75rem;
+	font-size: 18px;
+	color: var(--color-red);
+}
+
+.input {
+	width: 100%;
+	background-color: var(--color-main-background);
+	border-width: 0;
+	border-radius: 1rem;
+	height: 3rem;
+	background-color: var(--color-main-background);
+	outline: none;
+	padding-left: 1rem;
+	font-size: 18px;
+	caret-color: var(--color-dark-grey);
+	color: var(--color-dark-grey);
+}
+
+@media screen and (max-width: 800px) {
+	.input {
+		width: 100%;
+	}
+
+	.field {
+		margin-right: 4rem;
+		width: auto;
+	}
+}
