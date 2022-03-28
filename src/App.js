@@ -38,7 +38,7 @@ export default function App() {
 							backgroundColor="#717ECE"
 							image="workout-tracker.jpg"
 							title="Workout Tracker"
-							content="Web app that allows the user to track their workout progress. The user can save also see the analytics for a selected period of time. The app is developed using the MERN stack."
+							content="Web app that allows the user to track their workout progress. The user can also see the analytics for a selected period of time. The app is developed using the MERN stack."
 						/>
 						<Project
 							textColor="#2f2f2f"
@@ -56,9 +56,9 @@ export default function App() {
 							content="Java GUI app using the Swift library that allows the user to edit an image made of ASCII text using his mouse. The app is based on Trystan's Ascii Panel."
 						/>
 					</div>
-					<div class="expandArrow center-horizontally">
+					{/* <div class="expandArrow center-horizontally">
 						<img src="./res/expand_more_black_24dp.svg" alt="" class="expandArrow__image" id="expandArrow" />
-					</div>
+					</div> */}
 				</Container>
 
 				<Container title="About." titleColor="#ef6e64">

@@ -20,6 +20,7 @@ const Project = (props) => {
 	return (
 		<motion.div
 			whileHover={{ scale: 1.1 }}
+			transition={{ stiffness: 200 }}
 			onHoverStart={() => {
 				setHover(true)
 			}}
