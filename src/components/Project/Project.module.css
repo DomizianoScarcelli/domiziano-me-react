@@ -10,9 +10,6 @@
 	align-items: center;
 }
 
-.textContainer {
-}
-
 .image {
 	flex-grow: 1;
 	width: 40rem;

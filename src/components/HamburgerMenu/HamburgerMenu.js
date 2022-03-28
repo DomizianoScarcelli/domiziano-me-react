@@ -1,9 +1,17 @@
 import React from "react"
 import styles from "./HamburgerMenu.module.css"
+import { useState } from "react"
 
 const Hamburgermenu = () => {
+	const [expanded, setExpanded] = useState(false)
+
 	return (
-		<div className={styles.hamburger}>
+		<div
+			className={styles.hamburger + " " + (expanded ? styles.isActive : "")}
+			onClick={() => {
+				setExpanded(!expanded)
+			}}
+		>
 			{[1, 2, 3].map(() => {
 				return <span className={styles.line}></span>
 			})}
