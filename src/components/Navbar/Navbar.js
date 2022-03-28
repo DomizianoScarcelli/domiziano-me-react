@@ -1,17 +1,18 @@
 import React from "react"
+import styles from "./Navbar.module.css"
 
 const Navbar = () => {
+	const items = ["Projects.", "About.", "Contact Me."]
+
 	return (
-		<nav class="navbar" id="navbar">
-			<a class="navbar__item" href="#projects">
-				Projects.
-			</a>
-			<a class="navbar__item" href="#about">
-				About.
-			</a>
-			<a class="navbar__item" href="#contact">
-				Contact Me.
-			</a>
+		<nav className={styles.navbar}>
+			{items.map((item) => {
+				return (
+					<a className={styles.item} href="#projects">
+						{item}
+					</a>
+				)
+			})}
 		</nav>
 	)
 }

@@ -1,0 +1,16 @@
+.container {
+	width: 45vw;
+	min-width: 20rem;
+	position: relative;
+	border-radius: 1.5rem;
+	margin-top: 4rem;
+	max-height: fit-content;
+	background-color: var(--color-dark-grey);
+}
+
+.title {
+	position: absolute;
+	top: -2.4rem;
+	left: 1.5rem;
+	font-size: 50px;
+}

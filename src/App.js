@@ -1,6 +1,8 @@
 import "./App.css"
 import Navbar from "./components/Navbar/Navbar"
 import Project from "./components/Project/Project"
+import Container from "./components/Container/Container"
+import HamburgerMenu from "./components/HamburgerMenu/HamburgerMenu"
 
 export default function App() {
 	return (
@@ -10,21 +12,17 @@ export default function App() {
 					<div class="header__title">
 						Domiziano.
 						<div class="center-vertically">
-							<div class="hamburger">
-								<span class="hamburger__line"></span>
-								<span class="hamburger__line"></span>
-								<span class="hamburger__line"></span>
-							</div>
+							<HamburgerMenu />
 						</div>
 					</div>
+
 					<Navbar />
 					<div class="header__description">
 						I'm a CS student from Italy. <br />I love web and mobile development.
 					</div>
 				</div>
 
-				<div class="contentContainer contentContainer--verticalCenter" id="projects">
-					<div class="contentContainer__title">Projects.</div>
+				<Container title="Projects." titleColor="#ef6e64">
 					<div class="contentContainer__body" id="contentContainer__body">
 						<Project
 							textColor="#2f2f2f"
@@ -60,18 +58,16 @@ export default function App() {
 					<div class="expandArrow center-horizontally">
 						<img src="./res/expand_more_black_24dp.svg" alt="" class="expandArrow__image" id="expandArrow" />
 					</div>
-				</div>
+				</Container>
 
-				<div class="contentContainer" id="about">
-					<div class="green contentContainer__title">About.</div>
+				<Container title="About." titleColor="#ef6e64">
 					<div class="contentContainer__description">
-						I'm a 21 years old Computer Science student in Università La Sapienza di Roma. I was passionate about computers since I was a kid. I started coding in Python at 18 years old,
-						since then I learnt other languages such as Java, Javascript and PHP. In 2021 I built my first website using vanilla Javascript, HTML, CSS and PHP.
+						I'm a 22 years old Software Engineer passionate about web development. I've got my Bachelor's Degree in March 2022. I'm constantly learning new tools and technologies to
+						develop more useful and good looking web apps.
 					</div>
-				</div>
+				</Container>
 
-				<div class="contentContainer" id="contact">
-					<div class="contentContainer__title">Contact Me.</div>
+				<Container title="Contact me." titleColor="#ef6e64">
 					<form action="https://formsubmit.co/scarcelli.domiziano@gmail.com" method="POST" name="contactModule" class="contactModule">
 						{/* <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> */}
 						<input type="hidden" name="_autoresponse" value="Thanks for contacting me, I will answer ASAP!" />
@@ -90,7 +86,8 @@ export default function App() {
 						</div>
 					</form>
 					<div class="submitButton center-horizontally">Send.</div>
-				</div>
+				</Container>
+
 				<a class="backToTop center-horizontally" id="backToTopButton" href="#topContainer">
 					<img src="../public/res/arrow_upward_white_24dp.svg" />
 				</a>
