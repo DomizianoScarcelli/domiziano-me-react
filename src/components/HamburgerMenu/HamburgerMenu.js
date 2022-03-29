@@ -2,7 +2,7 @@ import React from "react"
 import styles from "./HamburgerMenu.module.css"
 import { useState } from "react"
 
-const Hamburgermenu = () => {
+const HamburgerMenu = () => {
 	const [expanded, setExpanded] = useState(false)
 
 	return (
@@ -19,4 +19,4 @@ const Hamburgermenu = () => {
 	)
 }
 
-export default Hamburgermenu
+export default HamburgerMenu

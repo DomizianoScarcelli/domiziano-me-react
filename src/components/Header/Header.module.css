@@ -1,0 +1,23 @@
+.container {
+	min-width: 25rem;
+	display: flex;
+	flex-direction: column;
+	width: 65vw;
+	justify-content: space-between;
+	position: relative;
+}
+
+.title {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 50px;
+	padding-bottom: 0.5rem;
+	color: var(--color-light-green);
+}
+
+.description {
+	align-self: flex-start;
+	font-size: 18px;
+	color: var(--color-dark-grey);
+}

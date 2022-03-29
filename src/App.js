@@ -1,27 +1,14 @@
 import "./App.css"
-import Navbar from "./components/Navbar/Navbar"
 import Project from "./components/Project/Project"
 import Container from "./components/Container/Container"
-import HamburgerMenu from "./components/HamburgerMenu/HamburgerMenu"
 import ContactForm from "./components/ContactForm/ContactForm"
+import Header from "./components/Header/Header"
 
 export default function App() {
 	return (
 		<div class="center-horizontally">
 			<div class="container center-vertically" id="topContainer">
-				<div class="header">
-					<div class="header__title">
-						Domiziano.
-						<div class="center-vertically">
-							<HamburgerMenu />
-						</div>
-					</div>
-
-					<Navbar />
-					<div class="header__description">
-						I'm a CS student from Italy. <br />I love web and mobile development.
-					</div>
-				</div>
+				<Header />
 
 				<Container title="Projects." titleColor="#ef6e64">
 					<div class="contentContainer__body" id="contentContainer__body">
