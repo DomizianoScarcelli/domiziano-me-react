@@ -25,7 +25,7 @@
 	width: 100%;
 	transform: scaleX(0);
 	height: 4px;
-	bottom: -5px;
+	bottom: -25px;
 	left: 0;
 	background-color: var(--color-red);
 	transform-origin: bottom right;
