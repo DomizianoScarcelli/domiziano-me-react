@@ -7,6 +7,34 @@
 	position: relative;
 }
 
+.titleContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.iconContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+}
+
+.iconContainer > * {
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.github {
+	background-image: url(../../../public/links-icon/github.svg);
+}
+
+.linkedin {
+	background-image: url(../../../public/links-icon/linkedin.svg);
+}
+
 .title {
 	display: flex;
 	flex-direction: row;
@@ -20,4 +48,15 @@
 	align-self: flex-start;
 	font-size: 18px;
 	color: var(--color-dark-grey);
+}
+
+@media screen and (max-width: 800px) {
+	.title {
+		width: 60vw;
+		min-width: 350px;
+	}
+
+	.description {
+		min-width: 350px;
+	}
 }

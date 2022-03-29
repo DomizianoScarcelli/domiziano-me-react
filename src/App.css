@@ -13,53 +13,9 @@
 	flex-direction: row;
 }
 
-body {
-	font-family: "Inter", sans-serif;
-	background-color: var(--color-main-background);
-	-moz-user-select: none;
-	-khtml-user-select: none;
-	-webkit-user-select: none;
-	user-select: none;
-}
-
 .container {
 	width: 60vw;
 	padding: 2% 20% 10% 20%;
-}
-
-.projectInsertAnimator {
-	animation: addProjectAnimation 0.4s ease-in-out;
-}
-
-.yellow {
-	color: var(--color-yellow);
-}
-
-.backYellow {
-	background-color: var(--color-yellow);
-}
-
-.green {
-	color: var(--color-dark-green);
-}
-
-.backViolet {
-	background-color: var(--color-violet);
-}
-
-.darkGrey {
-	color: var(--color-dark-grey);
-}
-
-.backDarkGrey {
-	background-color: var(--color-dark-grey);
-}
-
-.backDarkGreen {
-	background-color: var(--color-dark-green);
-}
-.lightGreen {
-	color: var(--color-light-green);
 }
 
 .expandArrow {
@@ -79,16 +35,6 @@ body {
 	transition: 300ms;
 }
 
-.rotate {
-	transform: rotate(180deg);
-	transition: transform 500ms;
-}
-
-.resetRotate {
-	transform: rotate(360deg);
-	transition: transform 500ms;
-}
-
 .aboutTitle {
 	color: var(--color-dark-green);
 }
@@ -97,21 +43,6 @@ body {
 	color: var(--color-yellow);
 	font-size: 25px;
 	padding: 2rem;
-}
-
-.submitButton {
-	width: 7rem;
-	height: 2.5rem;
-	margin: auto auto 1.5rem auto;
-	background-color: var(--color-red);
-	border-radius: 0.75rem;
-	text-align: center;
-	cursor: pointer;
-	transition: background-color 300ms;
-}
-
-.submitButton:hover {
-	background-color: var(--color-yellow);
 }
 
 .backToTop {
@@ -132,18 +63,6 @@ body {
 	background-color: var(--color-yellow);
 }
 
-@keyframes addProjectAnimation {
-	from {
-		transform: scale(0);
-	}
-}
-
-@keyframes removeProjectanimatikon {
-	to {
-		transform: scale(0);
-	}
-}
-
 @media screen and (max-width: 1200px) {
 	.centerContainer {
 		width: 50vw;
@@ -157,13 +76,6 @@ body {
 		padding-left: 0;
 		padding-right: 0;
 	}
-
-	.contentContainer__project {
-		width: auto;
-		margin-left: 3rem;
-		margin-right: 3rem;
-		margin-top: 2rem;
-	}
 }
 
 @media screen and (max-width: 800px) {
@@ -171,37 +83,11 @@ body {
 		flex-direction: column;
 	}
 
-	.navbar {
-		margin: 0;
-		display: flex;
-		min-width: 320px;
-		width: 56vw;
-		height: 5rem;
-		position: relative;
-		top: 0;
-		right: 0;
-		flex-direction: column;
-		background-color: var(--color-red);
-		border-radius: 1rem;
-		padding: 15px;
-		margin-bottom: 1rem;
-		transition: display 500ms;
-	}
-
 	.headerTextContainer {
 		width: 60vw;
 	}
 	.centerContainer {
 		width: 60vw;
-		min-width: 350px;
-	}
-
-	.header__title {
-		width: 60vw;
-		min-width: 350px;
-	}
-
-	.header__description {
 		min-width: 350px;
 	}
 

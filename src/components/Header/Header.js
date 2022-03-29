@@ -6,10 +6,20 @@ import styles from "./Header.module.css"
 const Header = () => {
 	return (
 		<div className={styles.container}>
-			<div className={styles.title}>
-				Domiziano.
-				<div class="center-vertically">
-					<HamburgerMenu />
+			<div className={styles.titleContainer}>
+				<div className={styles.title}>
+					Domiziano.
+					<div class="center-vertically">
+						<HamburgerMenu />
+					</div>
+				</div>
+				<div className={styles.iconContainer}>
+					<a className={styles.linkedin} href="https://www.linkedin.com/in/domiziano-scarcelli/" target="_blank" rel="noreferrer">
+						{" "}
+					</a>
+					<a className={styles.github} href="https://github.com/DomizianoScarcelli" target="_blank" rel="noreferrer">
+						{" "}
+					</a>
 				</div>
 			</div>
 

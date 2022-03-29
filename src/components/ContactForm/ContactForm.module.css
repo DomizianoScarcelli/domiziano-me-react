@@ -46,6 +46,21 @@
 	color: var(--color-dark-grey);
 }
 
+.submitButton {
+	width: 7rem;
+	height: 2.5rem;
+	margin: auto auto 1.5rem auto;
+	background-color: var(--color-red);
+	border-radius: 0.75rem;
+	text-align: center;
+	cursor: pointer;
+	transition: background-color 300ms;
+}
+
+.submitButton:hover {
+	background-color: var(--color-yellow);
+}
+
 @media screen and (max-width: 800px) {
 	.input {
 		width: 100%;
