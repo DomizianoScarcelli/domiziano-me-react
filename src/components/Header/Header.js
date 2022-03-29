@@ -2,15 +2,23 @@ import React from "react"
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu"
 import Navbar from "../Navbar/Navbar"
 import styles from "./Header.module.css"
+import { useState } from "react"
 
 const Header = () => {
+	const [isActive, setActive] = useState(false)
+
 	return (
 		<div className={styles.container}>
 			<div className={styles.titleContainer}>
 				<div className={styles.title}>
 					Domiziano.
 					<div class="center-vertically">
-						<HamburgerMenu />
+						<HamburgerMenu
+							isActive={isActive}
+							toggleActive={() => {
+								setActive(!isActive)
+							}}
+						/>
 					</div>
 				</div>
 				<div className={styles.iconContainer}>
@@ -23,7 +31,7 @@ const Header = () => {
 				</div>
 			</div>
 
-			<Navbar />
+			<Navbar isActive={isActive} />
 			<div className={styles.description}>
 				I'm a CS student from Italy. <br />I love web and mobile development.
 			</div>
