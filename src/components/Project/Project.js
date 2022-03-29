@@ -6,7 +6,7 @@ import { useMediaQuery } from "../../hooks/useMediaQuery"
 
 const Project = (props) => {
 	const [isHover, setHover] = useState(false)
-	const isSmall = useMediaQuery("(max-width: 800px)")
+	const isSmall = useMediaQuery("(max-width: 1000px)")
 
 	const imageUrl = `/project-images/${props.image}`
 

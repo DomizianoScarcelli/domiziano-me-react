@@ -61,7 +61,7 @@
 	background-color: var(--color-yellow);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 	.input {
 		width: 100%;
 	}

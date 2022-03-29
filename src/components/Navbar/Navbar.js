@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css"
 import { motion } from "framer-motion"
 import { useMediaQuery } from "../../hooks/useMediaQuery"
 const Navbar = (props) => {
-	const isSmall = useMediaQuery("(max-width: 800px)")
+	const isSmall = useMediaQuery("(max-width: 1000px)")
 	const items = ["Projects.", "About.", "Contact Me."]
 	const daySelectorVariants = {
 		//TODO: Change naming

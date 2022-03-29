@@ -33,10 +33,9 @@ export default function App() {
 						<Project
 							textColor="#2f2f2f"
 							backgroundColor="#a7a5c6"
-							image="workout-tracker.jpg"
+							image="custom-info-window.jpg"
 							title="GeneroCity"
 							content="Developed during my internship at University of La Sapienza, it's a smart parking native Android app that allows the users to swap parking spots."
-							github="https://github.com/DomizianoScarcelli/pathfinder-visualizer"
 						/>
 						<Project
 							textColor="#ffffff"

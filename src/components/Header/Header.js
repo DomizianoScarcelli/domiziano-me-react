@@ -12,16 +12,7 @@ const Header = () => {
 			<div className={styles.titleContainer}>
 				<div className={styles.title}>
 					Domiziano.
-					<div class="center-vertically">
-						<HamburgerMenu
-							isActive={isActive}
-							toggleActive={() => {
-								setActive(!isActive)
-							}}
-						/>
-					</div>
-				</div>
-				<div className={styles.iconContainer}>
+					<div className={styles.iconContainer}>
 					<a className={styles.linkedin} href="https://www.linkedin.com/in/domiziano-scarcelli/" target="_blank" rel="noreferrer">
 						{" "}
 					</a>
@@ -29,6 +20,14 @@ const Header = () => {
 						{" "}
 					</a>
 				</div>
+				</div>
+				
+				<HamburgerMenu
+							isActive={isActive}
+							toggleActive={() => {
+								setActive(!isActive)
+							}}
+						/>
 			</div>
 
 			<Navbar isActive={isActive} />
