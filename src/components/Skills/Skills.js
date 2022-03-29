@@ -12,12 +12,21 @@ const Skills = () => {
 				</div>
 				<div className={styles.row}>
 					<div className={styles.category}>Backend</div>
-					<div className={styles.skills}>Node.js | MongoDB | Express.js | Postman</div>
+					<div className={styles.skills}>Node.js MongoDB Express.js Postman</div>
 				</div>
 				<div className={styles.row}>
 					<div className={styles.category}>Programming Languages</div>
-					<div className={styles.skills}>VSCode | Intellij Idea | AndroidStudio</div>
+					<div className={styles.skills}>VSCode Intellij Idea AndroidStudio</div>
 				</div>
+				<div className={styles.row}>
+					<div className={styles.category}>Version control</div>
+					<div className={styles.skills}>Git GitHub GitLab</div>
+				</div>
+				<div className={styles.row}>
+					<div className={styles.category}>Other software</div>
+					<div className={styles.skills}>Photoshop AdobeXD Figma</div>
+				</div>
+
 			</div>
 		</Container>
 	)
