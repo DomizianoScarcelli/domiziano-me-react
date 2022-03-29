@@ -54,3 +54,16 @@
 .demo {
 	background-image: url(../../../public/links-icon/demo.svg);
 }
+
+@media screen and (max-width: 1050px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.image {
+		width: 80%;
+		height: 4rem;
+		margin-right: 0;
+		margin-bottom: 1rem;
+	}
+}
