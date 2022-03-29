@@ -2,9 +2,11 @@ import React from "react"
 import styles from "./Project.module.css"
 import { motion } from "framer-motion"
 import { useState } from "react"
+import { useMediaQuery } from "../../hooks/useMediaQuery"
 
 const Project = (props) => {
 	const [isHover, setHover] = useState(false)
+	const isSmall = useMediaQuery("(max-width: 800px)")
 
 	const imageUrl = `/project-images/${props.image}`
 
@@ -34,7 +36,7 @@ const Project = (props) => {
 			<div className={styles.textContainer}>
 				<div className={styles.title}>{props.title}</div>
 				<div className={styles.content}> {props.content}</div>
-				{isHover && (
+				{(isHover || isSmall) && (
 					<motion.div className={styles.links}>
 						{props.github && (
 							<a className={styles.github} href={props.github} target="_blank" rel="noreferrer">
