@@ -36,12 +36,16 @@ const Project = (props) => {
 				<div className={styles.content}> {props.content}</div>
 				{isHover && (
 					<motion.div className={styles.links}>
-						<a className={styles.github} href={props.github} target="_blank" rel="noreferrer">
-							{" "}
-						</a>
-						<a className={styles.demo} href={props.demo} target="_blank" rel="noreferrer">
-							{" "}
-						</a>
+						{props.github && (
+							<a className={styles.github} href={props.github} target="_blank" rel="noreferrer">
+								{" "}
+							</a>
+						)}
+						{props.demo && (
+							<a className={styles.demo} href={props.demo} target="_blank" rel="noreferrer">
+								{" "}
+							</a>
+						)}
 					</motion.div>
 				)}
 			</div>

@@ -27,14 +27,15 @@ export default function App() {
 							image="workout-tracker.jpg"
 							title="Workout Tracker"
 							content="Web app that allows the user to track their workout progress. The user can also see the analytics for a selected period of time. The app is developed using the MERN stack."
+							github="https://github.com/DomizianoScarcelli/workout-tracker"
 						/>
 						<Project
 							textColor="#2f2f2f"
 							backgroundColor="#a7a5c6"
 							image="workout-tracker.jpg"
 							title="GeneroCity"
-							content="Developed during my internship at University of La Sapienza, it's a smart parking native Android app that allows the users to swap parking spots.
-"
+							content="Developed during my internship at University of La Sapienza, it's a smart parking native Android app that allows the users to swap parking spots."
+							github="https://github.com/DomizianoScarcelli/pathfinder-visualizer"
 						/>
 						<Project
 							textColor="#ffffff"
@@ -42,6 +43,7 @@ export default function App() {
 							image="ascii-editor-gui.svg"
 							title="ASCII Editor GUI"
 							content="Java GUI app using the Swift library that allows the user to edit an image made of ASCII text using his mouse. The app is based on Trystan's Ascii Panel."
+							github="https://github.com/DomizianoScarcelli/ascii-editor-refactor"
 						/>
 					</div>
 					{/* <div class="expandArrow center-horizontally">
