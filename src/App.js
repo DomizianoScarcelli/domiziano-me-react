@@ -3,6 +3,7 @@ import Project from "./components/Project/Project"
 import Container from "./components/Container/Container"
 import ContactForm from "./components/ContactForm/ContactForm"
 import Header from "./components/Header/Header"
+import Skills from "./components/Skills/Skills"
 
 export default function App() {
 	return (
@@ -58,12 +59,7 @@ export default function App() {
 					</div>
 				</Container>
 
-				<Container title="Skills." titleColor="#2a9d8f">
-					<div class="contentContainer__description">
-						I'm a 22 years old Software Engineer passionate about web development. I've got my Bachelor's Degree in March 2022. I'm constantly learning new tools and technologies to
-						develop more useful and good looking web apps.
-					</div>
-				</Container>
+				<Skills />
 
 				<Container title="Contact me." titleColor="#ef6e64">
 					<ContactForm />
