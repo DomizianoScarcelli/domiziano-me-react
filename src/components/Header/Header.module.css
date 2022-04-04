@@ -1,74 +1,74 @@
 .container {
-  min-width: 25rem;
-  display: flex;
-  flex-direction: column;
-  width: 65vw;
-  justify-content: space-between;
-  position: relative;
+	min-width: 21rem;
+	display: flex;
+	flex-direction: column;
+	width: 65vw;
+	justify-content: space-between;
+	position: relative;
 }
 
 .titleContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 .iconContainer {
-  margin-left: 1rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+	margin-left: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
 }
 
 .iconContainer > * {
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-size: contain;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 .github {
-  background-image: url(../../../public/links-icon/github.svg);
+	background-image: url(../../../public/links-icon/github.svg);
 }
 
 .linkedin {
-  background-image: url(../../../public/links-icon/linkedin.svg);
+	background-image: url(../../../public/links-icon/linkedin.svg);
 }
 
 .title {
-  display: flex;
-  flex-direction: row;
-  font-size: 50px;
-  padding-bottom: 0.5rem;
-  color: var(--color-light-green);
+	display: flex;
+	flex-direction: row;
+	font-size: 50px;
+	padding-bottom: 0.5rem;
+	color: var(--color-light-green);
 }
 
 .description {
-  align-self: flex-start;
-  font-size: 18px;
-  color: var(--color-dark-grey);
+	align-self: flex-start;
+	font-size: 18px;
+	color: var(--color-dark-grey);
 }
 
 @media screen and (max-width: 1000px) {
-  .title {
-    width: 60vw;
-    min-width: 350px;
-  }
+	.title {
+		width: 60vw;
+		min-width: 300px;
+	}
 
-  .description {
-    min-width: 350px;
-  }
+	.description {
+		min-width: 350px;
+	}
 
-  .iconContainer > * {
-    width: 20px;
-    height: 20px;
-  }
+	.iconContainer > * {
+		width: 20px;
+		height: 20px;
+	}
 
-  .iconContainer {
-    flex-direction: column;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
+	.iconContainer {
+		flex-direction: column;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
 }
