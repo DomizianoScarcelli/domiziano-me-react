@@ -13,26 +13,26 @@ const Header = () => {
 				<div className={styles.title}>
 					Domiziano.
 					<div className={styles.iconContainer}>
-					<a className={styles.linkedin} href="https://www.linkedin.com/in/domiziano-scarcelli/" target="_blank" rel="noreferrer">
-						{" "}
-					</a>
-					<a className={styles.github} href="https://github.com/DomizianoScarcelli" target="_blank" rel="noreferrer">
-						{" "}
-					</a>
+						<a className={styles.linkedin} href="https://www.linkedin.com/in/domiziano-scarcelli/" target="_blank" rel="noreferrer">
+							{" "}
+						</a>
+						<a className={styles.github} href="https://github.com/DomizianoScarcelli" target="_blank" rel="noreferrer">
+							{" "}
+						</a>
+					</div>
 				</div>
-				</div>
-				
+
 				<HamburgerMenu
-							isActive={isActive}
-							toggleActive={() => {
-								setActive(!isActive)
-							}}
-						/>
+					isActive={isActive}
+					toggleActive={() => {
+						setActive(!isActive)
+					}}
+				/>
 			</div>
 
 			<Navbar isActive={isActive} />
 			<div className={styles.description}>
-				I'm a CS student from Italy. <br />I love web and mobile development.
+				I'm a Software Engineer from Italy. <br />I love web and mobile development.
 			</div>
 		</div>
 	)
