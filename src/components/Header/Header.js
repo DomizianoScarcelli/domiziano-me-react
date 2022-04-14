@@ -19,6 +19,9 @@ const Header = () => {
 						<a className={styles.github} href="https://github.com/DomizianoScarcelli" target="_blank" rel="noreferrer">
 							{" "}
 						</a>
+						<a className={styles.resume} href="https://github.com/DomizianoScarcelli/portfolio/raw/develop/public/documents/resume.pdf">
+							{" "}
+						</a>
 					</div>
 				</div>
 

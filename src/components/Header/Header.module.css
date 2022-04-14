@@ -37,6 +37,10 @@
 	background-image: url(../../../public/links-icon/linkedin.svg);
 }
 
+.resume {
+	background-image: url(../../../public/links-icon/resume-download.png);
+}
+
 .title {
 	display: flex;
 	flex-direction: row;
@@ -67,7 +71,9 @@
 	}
 
 	.iconContainer {
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-row: auto auto;
 		margin-left: 1rem;
 		margin-right: 1rem;
 	}
