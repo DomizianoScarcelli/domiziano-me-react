@@ -37,6 +37,10 @@
 	background-image: url(../../../public/links-icon/linkedin.svg);
 }
 
+.resume {
+	background-image: url(../../../public/links-icon/resume-download.png);
+}
+
 .title {
 	display: flex;
 	flex-direction: row;
