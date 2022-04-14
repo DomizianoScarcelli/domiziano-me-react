@@ -39,3 +39,10 @@
 		visibility: visible;
 	}
 }
+
+/* End of animation */
+@media screen and (max-width: 600px) {
+	.hamburger {
+		margin-top: 25px;
+	}
+}
