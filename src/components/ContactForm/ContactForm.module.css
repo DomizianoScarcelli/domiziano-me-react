@@ -1,6 +1,8 @@
 .container {
+	width: 100%;
 	padding: 3rem 0 2rem 0;
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 2rem;
@@ -8,21 +10,24 @@
 .field {
 	position: relative;
 	border-radius: 1rem;
-	margin-left: 1.75rem;
 	height: 3rem;
 	width: 30%;
 	background-color: var(--color-main-background);
 }
 
+.container > * {
+	margin: 0 1.75rem 0 1.75rem;
+}
+
 .bigField {
-	width: auto;
+	width: calc(100% - 1.75rem * 2 - 2rem);
 	height: 10rem;
+	/* padding-top: 1rem; */
 }
 
 .largeModule {
 	resize: none;
-	height: 9rem !important;
-	padding: 1rem 0 0 0;
+	/* padding: 1rem 0 0 0; */
 	font-family: "Inter", sans-serif;
 }
 
@@ -34,17 +39,20 @@
 }
 
 .input {
-	width: 100%;
 	background-color: var(--color-main-background);
 	border-width: 0;
 	border-radius: 1rem;
-	height: 3rem;
+	height: 100%;
 	background-color: var(--color-main-background);
 	outline: none;
-	padding-left: 1rem;
+	padding: 0 1rem 0 1rem;
 	font-size: 18px;
 	caret-color: var(--color-dark-grey);
 	color: var(--color-dark-grey);
+}
+
+.largeModule.input {
+	padding-top: 1rem;
 }
 
 .submitButton {
@@ -54,6 +62,8 @@
 	background-color: var(--color-red);
 	border-radius: 0.75rem;
 	text-align: center;
+	display: grid;
+	place-content: center;
 	cursor: pointer;
 	transition: background-color 300ms;
 }
@@ -62,21 +72,18 @@
 	background-color: var(--color-yellow);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1079px) {
 	.largeModule {
 		width: 100%;
 	}
-	.bigField {
-		width: 80%;
-	}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1079px) {
 	.input {
 		width: 100%;
 	}
 
 	.field {
-		width: 78%;
+		width: calc(100% - 1.75rem * 2 - 2rem);
 	}
 }

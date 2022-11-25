@@ -1,6 +1,6 @@
 .container {
-	width: 45vw;
-	min-width: 20rem;
+	width: 100%;
+	min-width: 25rem;
 	position: relative;
 	border-radius: 1.5rem;
 	margin-top: 4rem;

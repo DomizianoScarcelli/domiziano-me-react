@@ -34,7 +34,7 @@
 }
 
 /* End of animation */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1079px) {
 	.hamburger {
 		visibility: visible;
 	}
