@@ -2,7 +2,7 @@
 	min-width: 21rem;
 	display: flex;
 	flex-direction: column;
-	width: 65vw;
+	width: 100%;
 	justify-content: space-between;
 	position: relative;
 }
@@ -14,12 +14,13 @@
 }
 
 .iconContainer {
+	padding: 1rem 0 1rem 0;
 	margin-left: 1rem;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	gap: 1rem;
+	gap: 3rem;
 }
 
 .iconContainer > * {
@@ -55,7 +56,7 @@
 	color: var(--color-dark-grey);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1079px) {
 	.title {
 		width: 60vw;
 		min-width: 300px;
@@ -65,7 +66,7 @@
 		min-width: 350px;
 	}
 
-	.iconContainer > * {
+	/* .iconContainer > * {
 		width: 20px;
 		height: 20px;
 	}
@@ -76,5 +77,5 @@
 		grid-row: auto auto;
 		margin-left: 1rem;
 		margin-right: 1rem;
-	}
+	} */
 }
