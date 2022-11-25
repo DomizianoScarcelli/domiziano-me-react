@@ -58,24 +58,6 @@
 
 @media screen and (max-width: 1079px) {
 	.title {
-		width: 60vw;
-		min-width: 300px;
+		width: 100vw;
 	}
-
-	.description {
-		min-width: 350px;
-	}
-
-	/* .iconContainer > * {
-		width: 20px;
-		height: 20px;
-	}
-
-	.iconContainer {
-		display: grid;
-		grid-template-columns: auto auto;
-		grid-row: auto auto;
-		margin-left: 1rem;
-		margin-right: 1rem;
-	} */
 }

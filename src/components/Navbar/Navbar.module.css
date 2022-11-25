@@ -38,7 +38,7 @@
 	transform-origin: bottom left;
 }
 
-@media screen and (max-width: 1079px) {
+/* @media screen and (max-width: 1079px) {
 	.navbar {
 		margin: 0;
 		display: flex;
@@ -55,4 +55,4 @@
 		margin-bottom: 1rem;
 		transition: display 500ms;
 	}
-}
+} */
