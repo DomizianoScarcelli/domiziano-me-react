@@ -10,14 +10,20 @@
 	align-items: center;
 }
 
+.textContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 .image {
 	flex-grow: 1;
-	width: 40rem;
+	width: 10rem;
 	height: 4rem;
 	padding: 2rem;
 	margin-right: 1rem;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	border-radius: 1rem;
 }
 
