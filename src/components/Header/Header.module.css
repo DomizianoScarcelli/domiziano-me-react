@@ -52,7 +52,7 @@
 
 .description {
 	align-self: flex-start;
-	font-size: 18px;
+	font-size: 18px;  
 	color: var(--color-dark-grey);
 }
 
