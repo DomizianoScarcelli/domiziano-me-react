@@ -32,6 +32,7 @@ const Contactform = () => {
 				className={styles.submitButton + " center-horizontally"}
 				style={{
 					backgroundColor: colors.background,
+					color: colors.foregroundDark,
 				}}
 				onClick={() => {
 					document.forms["contactModule"].submit()

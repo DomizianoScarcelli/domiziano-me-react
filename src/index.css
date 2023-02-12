@@ -27,7 +27,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: var(--color-light-green);
+	background-color: var(--color-foreground-light);
 	border-radius: 10rem;
 	padding: 1rem;
 	margin: 1rem;

@@ -31,14 +31,25 @@
 	transition: 300ms;
 }
 
-.aboutTitle {
-	color: var(--color-foreground-dark);
-}
-
 .contentContainer__description {
-	color: var(--color-background);
 	font-size: 25px;
 	padding: 2rem;
+	text-align: center;
+}
+
+.noBottomPadding {
+	padding: 2rem 2rem 0 2rem;
+	margin: 0;
+}
+
+.contentContainer__body {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-basis: 100%;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
 }
 
 .backToTop {

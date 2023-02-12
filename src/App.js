@@ -12,13 +12,14 @@ export default function App() {
 			<Header />
 
 			<Container title="About." titleColor={colors.containerTitle}>
-				<div class="contentContainer__description">
+				<p class="contentContainer__description">
 					I'm a 22 years old Software Engineer passionate about web development. I've got my Bachelor's Degree in March 2022. I'm constantly learning new tools and technologies to develop
 					more useful and good looking web apps.
-				</div>
+				</p>
 			</Container>
 
 			<Container title="Projects." titleColor={colors.containerTitle}>
+				<p className="contentContainer__description noBottomPadding">These are some project I developed, both for learning reasons or as university assignment</p>
 				<div class="contentContainer__body" id="contentContainer__body">
 					<Project
 						image="word_search.webp"
@@ -43,6 +44,7 @@ export default function App() {
 						image="gc-logo.png"
 						title="GeneroCity"
 						content="Developed during my internship at University of La Sapienza, it's a smart parking native Android app that allows the users to swap parking spots."
+						demo="https://www.generocity.it/"
 					/>
 					<Project
 						image="ascii-editor-gui.svg"
@@ -56,14 +58,22 @@ export default function App() {
 					</div> */}
 			</Container>
 
+			{/* <Container title="Open Source Contributions." titleColor={colors.containerTitle}>
+				<Project
+					image="ascii-editor-gui.svg"
+					title="ASCII Editor GUI"
+					content="Java GUI app using the Swing library that allows the user to edit an image made of ASCII text using his mouse. The app is based on Trystan's Ascii Panel."
+					github="https://github.com/DomizianoScarcelli/ascii-editor-refactor"
+				/>
+			</Container> */}
 			<Skills />
 
 			<Container title="Contact me." titleColor={colors.containerTitle}>
 				<ContactForm />
 			</Container>
 
-			<a class="backToTop center-horizontally" id="backToTopButton" href="#topContainer">
-				<img src="../public/res/arrow_upward_white_24dp.svg" />
+			<a class="backToTop center-horizontally" id="backToTopButton" href="#topContainer" style={{ backgroundColor: colors.foregroundDark }}>
+				<img src="../public/res/arrow_upward_white_24dp.svg" alt="back to top" />
 			</a>
 		</div>
 	)
