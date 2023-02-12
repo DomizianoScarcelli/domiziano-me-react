@@ -3,7 +3,7 @@ import styles from "./Project.module.css"
 import { motion } from "framer-motion"
 import { useState } from "react"
 import { useMediaQuery } from "../../hooks/useMediaQuery"
-
+import colors from "../../colors"
 const Project = (props) => {
 	const [isHover, setHover] = useState(false)
 	const isSmall = useMediaQuery("(max-width: 1079px)")
@@ -15,8 +15,8 @@ const Project = (props) => {
 	}
 
 	const colorStyle = {
-		color: props.textColor,
-		backgroundColor: props.backgroundColor,
+		color: colors.foregroundDark,
+		backgroundColor: colors.backgroundLight,
 	}
 
 	return (

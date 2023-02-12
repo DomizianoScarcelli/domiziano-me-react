@@ -2,6 +2,7 @@ import React from "react"
 import styles from "./Navbar.module.css"
 import { motion } from "framer-motion"
 import { useMediaQuery } from "../../hooks/useMediaQuery"
+import colors from "../../colors"
 const Navbar = (props) => {
 	const isSmall = useMediaQuery("(max-width: 1079px)")
 	const items = ["Projects.", "About.", "Contact Me."]
@@ -27,7 +28,7 @@ const Navbar = (props) => {
 		<motion.nav variants={daySelectorVariants} animate="toggle" className={styles.navbar}>
 			{items.map((item) => {
 				return (
-					<motion.a variants={daySelectorTextVariants} animate="toggle" className={styles.item} href={`#${item.toLowerCase()}`}>
+					<motion.a variants={daySelectorTextVariants} animate="toggle" className={styles.item} style={{ color: colors.background }} href={`#${item.toLowerCase()}`}>
 						{item}
 					</motion.a>
 				)

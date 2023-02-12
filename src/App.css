@@ -32,11 +32,11 @@
 }
 
 .aboutTitle {
-	color: var(--color-dark-green);
+	color: var(--color-foreground-dark);
 }
 
 .contentContainer__description {
-	color: var(--color-yellow);
+	color: var(--color-background);
 	font-size: 25px;
 	padding: 2rem;
 }
@@ -46,7 +46,7 @@
 	width: 2rem;
 	height: 2rem;
 	border-radius: 1rem;
-	background-color: var(--color-red);
+	background-color: var(--color-foreground-medium);
 	cursor: pointer;
 	position: fixed;
 	bottom: 20px;
@@ -56,7 +56,7 @@
 }
 
 .backToTop:hover {
-	background-color: var(--color-yellow);
+	background-color: var(--color-foreground-medium);
 }
 
 @media screen and (max-width: 1200px) {

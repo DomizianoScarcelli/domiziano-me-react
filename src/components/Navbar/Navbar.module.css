@@ -28,7 +28,7 @@
 	height: 4px;
 	bottom: -25px;
 	left: 0;
-	background-color: var(--color-red);
+	background-color: var(--color-foreground-medium);
 	transform-origin: bottom right;
 	transition: transform 0.25s ease-out;
 }
@@ -37,5 +37,3 @@
 	transform: scaleX(1);
 	transform-origin: bottom left;
 }
-
-

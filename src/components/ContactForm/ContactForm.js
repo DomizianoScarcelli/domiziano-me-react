@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "./ContactForm.module.css"
+import colors from "../../colors"
 
 const Contactform = () => {
 	return (
@@ -9,26 +10,29 @@ const Contactform = () => {
 				<input type="hidden" name="_autoresponse" value="Thanks for contacting me, I will answer ASAP!" />
 
 				<div className={styles.field}>
-					<div style={{ color: "#2a9d8f" }} className={styles.title}>
+					<div style={{ color: colors.foregroundDark }} className={styles.title}>
 						Name.
 					</div>
-					<input type="text" name="name" className={styles.input} />
+					<input type="text" name="name" className={styles.input} style={{ backgroundColor: colors.background }} />
 				</div>
 				<div className={styles.field}>
-					<div style={{ color: "#e9c46a" }} className={styles.title}>
+					<div style={{ color: colors.foregroundDark }} className={styles.title}>
 						Email.
 					</div>
-					<input type="email" name="email" className={styles.input} />
+					<input type="email" name="email" className={styles.input} style={{ backgroundColor: colors.background }} />
 				</div>
 				<div className={styles.field + " " + styles.bigField}>
-					<div style={{ color: "#7fc29b" }} className={styles.title}>
+					<div style={{ color: colors.foregroundDark }} className={styles.title}>
 						Message.
 					</div>
-					<textarea name="message" className={styles.input + " " + styles.largeModule}></textarea>
+					<textarea name="message" className={styles.input + " " + styles.largeModule} style={{ backgroundColor: colors.background }}></textarea>
 				</div>
 			</form>
 			<div
 				className={styles.submitButton + " center-horizontally"}
+				style={{
+					backgroundColor: colors.background,
+				}}
 				onClick={() => {
 					document.forms["contactModule"].submit()
 				}}
