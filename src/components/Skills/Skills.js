@@ -1,4 +1,4 @@
-import { React, useState, useRef, useEffect } from "react"
+import { React, useState } from "react"
 import styles from "./Skills.module.css"
 import Container from "../Container/Container"
 import colors from "../../colors"
@@ -13,7 +13,7 @@ const Skills = () => {
 		backend: [icons.django, icons.mysql],
 		programmingLanguages: [icons.python, icons.java, icons.javascript, icons.typescript, icons.swift],
 		IDEs: [icons.vscode, icons.androidstudio, icons.intellij],
-		otherSoftware: [icons.figma, icons.adobexd, icons.photoshop],
+		otherSoftware: [icons.git, icons.github, icons.gitlab, icons.figma, icons.adobexd, icons.photoshop],
 	}
 	const [currentSkills, setCurrentSkills] = useState(skills.frontend)
 	const [selectedFilter, setSelectedFilter] = useState("Frontend")

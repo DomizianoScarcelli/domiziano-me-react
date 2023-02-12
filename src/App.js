@@ -5,6 +5,7 @@ import ContactForm from "./components/ContactForm/ContactForm"
 import Header from "./components/Header/Header"
 import Skills from "./components/Skills/Skills"
 import colors from "./colors"
+import Contributions from "./components/Contributions/Contributions"
 
 export default function App() {
 	return (
@@ -54,15 +55,17 @@ export default function App() {
 					/>
 				</div>
 				{/* <div class="expandArrow center-horizontally">
-						<img src="./res/expand_more_black_24dp.svg" alt="" class="expandArrow__image" id="expandArrow" />
-					</div> */}
+					<img src="./res/expand_more_black_24dp.svg" alt="" class="expandArrow__image" id="expandArrow" />
+				</div> */}
 			</Container>
 
 			<Skills />
 
-			{/* <Container title="Contributions." titleColor={colors.containerTitle}>
-                
-            </Container> */}
+			<Container title="Contributions." titleColor={colors.containerTitle}>
+				<p className="contentContainer__description noBottomPadding">Open source code is very important, so whenever I can I try to contribute to some projects on GitHub.</p>
+
+				<Contributions />
+			</Container>
 
 			<Container title="Contact me." titleColor={colors.containerTitle}>
 				<ContactForm />
