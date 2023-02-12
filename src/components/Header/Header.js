@@ -3,14 +3,16 @@ import HamburgerMenu from "../HamburgerMenu/HamburgerMenu"
 import Navbar from "../Navbar/Navbar"
 import styles from "./Header.module.css"
 import { useState } from "react"
-
+import colors from "../../colors"
 const Header = () => {
 	const [isActive, setActive] = useState(false)
 
 	return (
 		<div className={styles.container}>
 			<div className={styles.titleContainer}>
-				<div className={styles.title}>Domiziano.</div>
+				<div className={styles.title} style={{ color: colors.containerTitle }}>
+					Domiziano.
+				</div>
 
 				<HamburgerMenu
 					isActive={isActive}
@@ -22,7 +24,9 @@ const Header = () => {
 			<Socials />
 
 			<Navbar isActive={isActive} />
-			<div className={styles.description}>{/* I'm a Software Engineer from Italy. <br />I love web and mobile development. */}</div>
+			<div className={styles.description} style={{ color: colors.containerTitle }}>
+				{/* I'm a Software Engineer from Italy. <br />I love web and mobile development. */}
+			</div>
 		</div>
 	)
 }

@@ -1,10 +1,10 @@
 import React from "react"
 import styles from "./Skills.module.css"
 import Container from "../Container/Container"
-
+import colors from "../../colors"
 const Skills = () => {
 	return (
-		<Container title="Skills." titleColor="#2a9d8f">
+		<Container title="Skills." titleColor={colors.containerTitle}>
 			<div className={styles.container}>
 				<div className={styles.row}>
 					<div className={styles.category}>Frontend</div>
@@ -26,7 +26,6 @@ const Skills = () => {
 					<div className={styles.category}>Other software</div>
 					<div className={styles.skills}>Photoshop AdobeXD Figma</div>
 				</div>
-
 			</div>
 		</Container>
 	)

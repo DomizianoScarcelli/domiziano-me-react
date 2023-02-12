@@ -39,16 +39,12 @@
 }
 
 .input {
-	background-color: var(--color-main-background);
 	border-width: 0;
 	border-radius: 1rem;
 	height: 100%;
-	background-color: var(--color-main-background);
 	outline: none;
 	padding: 0 1rem 0 1rem;
 	font-size: 18px;
-	caret-color: var(--color-dark-grey);
-	color: var(--color-dark-grey);
 }
 
 .largeModule.input {
@@ -59,7 +55,6 @@
 	width: 7rem;
 	height: 2.5rem;
 	margin: auto auto 1.5rem auto;
-	background-color: var(--color-red);
 	border-radius: 0.75rem;
 	text-align: center;
 	display: grid;
