@@ -1,8 +1,12 @@
 .container {
 	padding: 2rem;
+	margin: 0 2rem 2rem 2rem;
+	border-radius: 2rem;
 	font-size: 25px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
 	gap: 1rem;
 }
 
@@ -21,4 +25,32 @@
 .skills {
 	font-size: 18px;
 	color: var(--color-dark-green);
+}
+
+.picker {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0 2rem 0 2rem;
+	font-size: 20px;
+	justify-content: space-evenly;
+}
+
+.pickerElement {
+	padding: 0.5rem;
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+	display: block;
+}
+
+.pickerElementBackground {
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 15px;
+	height: 3rem;
+	border-radius: 8px;
 }
