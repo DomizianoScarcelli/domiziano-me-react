@@ -19,9 +19,11 @@ const Project = (props) => {
 
 	return (
 		<div className={styles.container} style={colorStyle}>
-			<div className={styles.image} style={imageStyle}></div>
 			<div className={styles.textContainer}>
+				<div className={styles.image} style={imageStyle}></div>
 				<div className={styles.title}>{props.title}</div>
+			</div>
+			<div className={styles.textContainer}>
 				<div className={styles.content}> {props.content}</div>
 
 				<div className={styles.links}>
