@@ -27,6 +27,9 @@
 	color: var(--color-dark-green);
 }
 
+.skillsIcon {
+	width: 4rem;
+}
 .picker {
 	display: flex;
 	flex-direction: row;

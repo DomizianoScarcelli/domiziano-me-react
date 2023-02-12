@@ -58,15 +58,11 @@ export default function App() {
 					</div> */}
 			</Container>
 
-			{/* <Container title="Open Source Contributions." titleColor={colors.containerTitle}>
-				<Project
-					image="ascii-editor-gui.svg"
-					title="ASCII Editor GUI"
-					content="Java GUI app using the Swing library that allows the user to edit an image made of ASCII text using his mouse. The app is based on Trystan's Ascii Panel."
-					github="https://github.com/DomizianoScarcelli/ascii-editor-refactor"
-				/>
-			</Container> */}
 			<Skills />
+
+			{/* <Container title="Contributions." titleColor={colors.containerTitle}>
+                
+            </Container> */}
 
 			<Container title="Contact me." titleColor={colors.containerTitle}>
 				<ContactForm />
