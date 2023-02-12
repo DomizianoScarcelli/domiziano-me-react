@@ -9,11 +9,11 @@ import { icons } from "./skillsIcons"
 const Skills = () => {
 	const values = ["All", "Frontend", "Backend", "Programming Languges", "IDEs", "Other Software"]
 	const skills = {
-		frontend: ["Javascript", "Typescript", "HTML5", "CSS3", "React"],
-		backend: ["Django", "MySql"],
-		programmingLanguages: ["python", "java", "javascript", "typescript_badge", "swift"],
-		IDEs: [],
-		otherSoftware: [],
+		frontend: [icons.javascript, icons.typescript, icons.html, icons.css, icons.react],
+		backend: [icons.django, icons.mysql],
+		programmingLanguages: [icons.python, icons.java, icons.javascript, icons.typescript, icons.swift],
+		IDEs: [icons.vscode, icons.androidstudio, icons.intellij],
+		otherSoftware: [icons.figma, icons.adobexd, icons.photoshop],
 	}
 	const [currentSkills, setCurrentSkills] = useState(skills.frontend)
 	const [selectedFilter, setSelectedFilter] = useState("Frontend")
@@ -40,7 +40,7 @@ const Skills = () => {
 		let skillsArray = []
 		for (const [key, list] of Object.entries(skills)) {
 			for (const skill of list) {
-				skillsArray.push(skill)
+				if (!skillsArray.includes(skill)) skillsArray.push(skill)
 			}
 		}
 
@@ -73,14 +73,7 @@ const Skills = () => {
 			</AnimateSharedLayout>
 			<div className={styles.container} style={{ backgroundColor: colors.backgroundLight }}>
 				{currentSkills.map((value, index) => {
-					{
-						/* return <img className={styles.skillsIcon} src={icons.react} /> */
-					}
-					return (
-						<motion.p animate={{ scale: [0.8, 1.2, 1] }} transition={{ duration: 0.2 + index / 40 }}>
-							{value}
-						</motion.p>
-					)
+					return <motion.i animate={{ scale: [0.8, 1.2, 1] }} transition={{ duration: 0.2 + index / 40 }} className={`${value} colored ${styles.skillsIcon}`}></motion.i>
 				})}
 			</div>
 		</Container>
