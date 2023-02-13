@@ -40,6 +40,11 @@
 .top > p {
 	font-weight: bold;
 	padding-left: 1rem;
+	cursor: pointer;
+}
+
+.top > p:hover {
+	text-decoration: underline;
 }
 
 .merged {
@@ -65,4 +70,8 @@
 
 span {
 	color: #8d949d;
+	cursor: pointer;
+}
+span:hover {
+	text-decoration: underline;
 }
