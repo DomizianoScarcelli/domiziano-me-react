@@ -73,7 +73,14 @@ const Skills = () => {
 			</AnimateSharedLayout>
 			<div className={styles.container} style={{ backgroundColor: colors.backgroundLight }}>
 				{currentSkills.map((value, index) => {
-					return <motion.i animate={{ scale: [0.8, 1.2, 1] }} transition={{ duration: 0.2 + index / 40 }} className={`${value} colored ${styles.skillsIcon}`}></motion.i>
+					return (
+						<div className={styles.skillsIconContainer}>
+							<motion.i animate={{ scale: [0.8, 1.2, 1] }} transition={{ duration: 0.2 + index / 40 }} className={`${value.icon} colored ${styles.skillsIcon}`}></motion.i>
+							<p className={styles.skillTitle} style={{ color: colors.foregroundMedium }}>
+								{value.name}
+							</p>
+						</div>
+					)
 				})}
 			</div>
 		</Container>
