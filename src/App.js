@@ -23,20 +23,20 @@ export default function App() {
 				<p className="contentContainer__description noBottomPadding">These are some project I developed, both for learning reasons or as university assignment</p>
 				<div class="contentContainer__body" id="contentContainer__body">
 					<Project
-						image="word_search.webp"
+						image="wordsearch-2.png"
 						title="Word Search Generator"
 						content="Web app written using React with Typescrit that uses a backtracking algorithm to generate a Word Search puzzle of any dimension from a set of words"
 						github="https://github.com/DomizianoScarcelli/word-find-puzzle"
 					/>
 					<Project
-						image="pathfinder-visualizer.svg"
+						image="pathfinder-visualizer-2.png"
 						title="Pathfinder Visualizer"
 						content="Web app that allows the user to select two  points and see the shortest path between them.
 							The app is developed using p5.js"
 						github="https://github.com/DomizianoScarcelli/pathfinder-visualizer"
 					/>
 					<Project
-						image="workout-tracker.jpg"
+						image="workout-tracker-2.png"
 						title="Workout Tracker"
 						content="Web app that allows the user to track their workout progress. The user can also see the analytics for a selected period of time. The app is developed using the MERN stack."
 						github="https://github.com/DomizianoScarcelli/workout-tracker"
@@ -48,7 +48,7 @@ export default function App() {
 						demo="https://www.generocity.it/"
 					/>
 					<Project
-						image="ascii-editor-gui.svg"
+						image="ascii-editor-gui-3.png"
 						title="ASCII Editor GUI"
 						content="Java GUI app using the Swing library that allows the user to edit an image made of ASCII text using his mouse. The app is based on Trystan's Ascii Panel."
 						github="https://github.com/DomizianoScarcelli/ascii-editor-refactor"
