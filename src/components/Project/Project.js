@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { useMediaQuery } from "../../hooks/useMediaQuery"
 import colors from "../../colors"
 const Project = (props) => {
-	const isSmall = useMediaQuery("(max-width: 1079px)")
+	const isSmall = useMediaQuery("(max-width: 1160px)")
 	const imageUrl = `/project-images/${props.image}`
 	const containerRef = useRef()
 	const [containerWidth, setContainerWidth] = useState()

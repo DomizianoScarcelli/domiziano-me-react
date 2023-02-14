@@ -1,4 +1,4 @@
-import { React, useState } from "react"
+import { React, useState, useEffect } from "react"
 import styles from "./Skills.module.css"
 import Container from "../Container/Container"
 import colors from "../../colors"
@@ -15,8 +15,8 @@ const Skills = () => {
 		IDEs: [icons.vscode, icons.androidstudio, icons.intellij],
 		otherSoftware: [icons.git, icons.github, icons.gitlab, icons.figma, icons.adobexd, icons.photoshop],
 	}
-	const [currentSkills, setCurrentSkills] = useState(skills.frontend)
-	const [selectedFilter, setSelectedFilter] = useState("Frontend")
+	const [currentSkills, setCurrentSkills] = useState([])
+	const [selectedFilter, setSelectedFilter] = useState("All")
 	const selectorWidth = useTextWidth({ text: selectedFilter, font: `1.25rem Inter` }) + 10
 
 	const selectSkillsFromFilter = (filter) => {
@@ -53,6 +53,9 @@ const Skills = () => {
 		setCurrentSkills(newSkills)
 	}
 
+	useEffect(() => {
+		setCurrentSkills(getAllSkills())
+	}, [])
 	return (
 		<Container title="Skills." titleColor={colors.containerTitle}>
 			<AnimateSharedLayout>
