@@ -9,7 +9,7 @@ const Contributions = () => {
 			<div className={styles.line} style={{ backgroundColor: colors.foregroundMedium }}></div>
 			<ContributionPanel
 				repository={"DamascenoRafael/reminders-menubar"}
-				link={"https://github.com/DamascenoRafael/reminders-menubar"}
+				link={"https://github.com/DamascenoRafael/reminders-menubar/pull/105"}
 				title={"Adding possibility to specify due date and time with natural language"}
 				number={"105"}
 			/>

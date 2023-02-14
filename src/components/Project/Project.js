@@ -12,7 +12,6 @@ const Project = (props) => {
 	useLayoutEffect(() => {
 		function updateContainerWidth() {
 			setContainerWidth(containerRef.current.offsetWidth)
-			console.log(containerRef.current.offsetWidth)
 		}
 		window.addEventListener("resize", updateContainerWidth)
 	}, [])
