@@ -13,9 +13,9 @@ export default function App() {
 			<Header />
 
 			<Container title="About." titleColor={colors.containerTitle}>
-				<p class="contentContainer__description">
-					I'm a 22 years old Software Engineer passionate about web development. I've got my Bachelor's Degree in March 2022. I'm constantly learning new tools and technologies to develop
-					more useful and good looking web apps.
+				<p class="justified contentContainer__description">
+					I'm a 23 years old Software Engineer passionate about software development, in particular Web and App development, with some interest about anything that's AI.
+					<br /> <br />I obtained my Bachelor's Degree in Computer Science in March 2022 and I'm currently studying for my Master's Degree in CS at the University of Rome "La Sapienza".
 				</p>
 			</Container>
 

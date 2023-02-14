@@ -1,5 +1,7 @@
 /* TODO togli sta roba */
-
+.justified {
+	text-align: justify !important;
+}
 .center-vertically {
 	display: flex;
 	align-items: center;
