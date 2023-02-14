@@ -7,7 +7,7 @@ import { useTextWidth } from "@imagemarker/use-text-width"
 import { icons } from "./skillsIcons"
 
 const Skills = () => {
-	const values = ["All", "Frontend", "Backend", "Programming Languges", "IDEs", "Other Software"]
+	const values = ["All", "Frontend", "Backend", "Programming Languages", "IDEs", "Other Software"]
 	const skills = {
 		frontend: [icons.javascript, icons.typescript, icons.html, icons.css, icons.react],
 		backend: [icons.django, icons.mysql],
@@ -17,7 +17,7 @@ const Skills = () => {
 	}
 	const [currentSkills, setCurrentSkills] = useState(skills.frontend)
 	const [selectedFilter, setSelectedFilter] = useState("Frontend")
-	const selectorWidth = useTextWidth({ text: selectedFilter, font: "25px Times" }) + 10
+	const selectorWidth = useTextWidth({ text: selectedFilter, font: `1.25rem Inter` }) + 10
 
 	const selectSkillsFromFilter = (filter) => {
 		switch (filter) {
@@ -25,7 +25,7 @@ const Skills = () => {
 				return skills.frontend
 			case "Backend":
 				return skills.backend
-			case "Programming Languges":
+			case "Programming Languages":
 				return skills.programmingLanguages
 			case "IDEs":
 				return skills.IDEs

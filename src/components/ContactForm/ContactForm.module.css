@@ -35,7 +35,7 @@
 	position: absolute;
 	top: -0.85rem;
 	left: 0.75rem;
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 
 .input {
@@ -44,7 +44,7 @@
 	height: 100%;
 	outline: none;
 	padding: 0 1rem 0 1rem;
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 
 .largeModule.input {
