@@ -39,8 +39,11 @@
 
 .top > p {
 	font-weight: bold;
-	padding-left: 1rem;
 	cursor: pointer;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	text-indent: 1rem;
 }
 
 .top > p:hover {

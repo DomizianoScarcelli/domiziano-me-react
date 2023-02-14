@@ -55,7 +55,7 @@
 	font-size: 1.125rem;
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 89.125rem) {
 	.title {
 		width: 100vw;
 	}

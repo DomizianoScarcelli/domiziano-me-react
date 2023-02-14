@@ -4,10 +4,11 @@ import { motion, AnimateSharedLayout } from "framer-motion"
 import { useMediaQuery } from "../../hooks/useMediaQuery"
 import colors from "../../colors"
 const Navbar = (props) => {
-	const isSmall = useMediaQuery("(max-width: 1160px)")
-	const items = ["Projects.", "About.", "Contact Me."]
+	const items = ["About.", "Projects.", "Contributions.", "Contact Me."]
+	const isSmall = useMediaQuery(`(max-width: 89.125rem)`)
 	const [selectedItem, setSelectedItem] = useState()
 	const [resetTimeout, setResetTimeout] = useState()
+
 	const navbarSelectorVariants = {
 		hidden: {
 			height: "0px",
