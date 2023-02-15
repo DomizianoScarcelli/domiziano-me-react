@@ -1,5 +1,5 @@
 .navbar {
-	font-size: 18px;
+	font-size: 1.125rem;
 	display: flex;
 	flex-direction: row;
 	width: 25%;
@@ -20,17 +20,13 @@
 	cursor: pointer;
 }
 
-.item:after {
-	content: "";
+.underline {
 	position: absolute;
 	width: 100%;
-	transform: scaleX(0);
-	height: 4px;
-	bottom: -25px;
+	border-radius: 2px;
+	height: 5px;
+	bottom: -28px;
 	left: 0;
-	background-color: var(--color-foreground-medium);
-	transform-origin: bottom right;
-	transition: transform 0.25s ease-out;
 }
 
 .item:hover:after {

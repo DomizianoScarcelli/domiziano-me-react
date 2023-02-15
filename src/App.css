@@ -1,5 +1,7 @@
 /* TODO togli sta roba */
-
+.justified {
+	text-align: justify !important;
+}
 .center-vertically {
 	display: flex;
 	align-items: center;
@@ -9,8 +11,7 @@
 
 .container {
 	margin: auto;
-	width: clamp(28rem, 50vw, 50vw);
-	/* padding: 0.5rem 3rem 1rem 2rem; */
+	width: clamp(21rem, 50vw, 60vw);
 	padding: 2rem 0 2rem 0;
 }
 
@@ -32,7 +33,7 @@
 }
 
 .contentContainer__description {
-	font-size: 25px;
+	font-size: 1.563rem;
 	padding: 2rem;
 	text-align: center;
 }
@@ -85,7 +86,7 @@
 	}
 }
 
-@media screen and (max-width: 1079px) {
+@media screen and (max-width: 1160px) {
 	.headerFirstContainer {
 		flex-direction: column;
 	}

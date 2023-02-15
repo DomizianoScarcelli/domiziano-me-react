@@ -2,12 +2,12 @@
 	padding: 4rem;
 	margin: 0 2rem 2rem 2rem;
 	border-radius: 2rem;
-	font-size: 25px;
+	font-size: 1.563rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
-	gap: 4rem;
+	gap: 2.5rem;
 }
 
 .row {
@@ -23,7 +23,7 @@
 }
 
 .skills {
-	font-size: 18px;
+	font-size: 1.125rem;
 	color: var(--color-dark-green);
 }
 
@@ -34,12 +34,12 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	padding: 0 2rem 0 2rem;
-	font-size: 20px;
+	padding: 1rem 2rem 0 2rem;
 	justify-content: space-evenly;
 }
 
 .pickerElement {
+	font-size: 1.25rem;
 	padding: 0.5rem;
 	cursor: pointer;
 	position: relative;
@@ -65,6 +65,6 @@
 
 .skillTitle {
 	padding-top: 0.5rem;
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 500;
 }

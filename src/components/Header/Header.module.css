@@ -46,16 +46,16 @@
 	font-weight: bold;
 	display: flex;
 	flex-direction: row;
-	font-size: 50px;
+	font-size: 3.125rem;
 	padding-bottom: 0.5rem;
 }
 
 .description {
 	align-self: flex-start;
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 
-@media screen and (max-width: 1079px) {
+@media screen and (max-width: 89.125rem) {
 	.title {
 		width: 100vw;
 	}
