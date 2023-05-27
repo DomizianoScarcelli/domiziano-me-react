@@ -4,10 +4,7 @@
 	flex-direction: row;
 	width: 25%;
 	min-width: fit-content;
-	justify-content: space-between;
-	position: absolute;
-	top: 2rem;
-	right: 2rem;
+	margin: auto;
 	gap: 1rem;
 }
 
@@ -25,7 +22,6 @@
 	width: 100%;
 	border-radius: 2px;
 	height: 5px;
-	bottom: -28px;
 	left: 0;
 }
 

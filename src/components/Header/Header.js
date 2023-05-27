@@ -21,12 +21,9 @@ const Header = () => {
 					}}
 				/>
 			</div>
-			<Socials />
 
 			<Navbar isActive={isActive} />
-			<div className={styles.description} style={{ color: colors.containerTitle }}>
-				{/* I'm a Software Engineer from Italy. <br />I love web and mobile development. */}
-			</div>
+			<Socials />
 		</div>
 	)
 }

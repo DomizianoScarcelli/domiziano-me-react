@@ -1,11 +1,10 @@
 import React, { useState, useRef, useLayoutEffect } from "react"
 import styles from "./Project.module.css"
 import { motion } from "framer-motion"
-import { useMediaQuery } from "../../hooks/useMediaQuery"
 import colors from "../../colors"
-const Project = (props) => {
-	const isSmall = useMediaQuery("(max-width: 1160px)")
-	const imageUrl = `/project-images/${props.image}`
+
+const Project = ({ title, image, content, github, demo }) => {
+	const imageUrl = `/project-images/${image}`
 	const containerRef = useRef()
 	const [containerWidth, setContainerWidth] = useState()
 
@@ -30,19 +29,19 @@ const Project = (props) => {
 		<div ref={containerRef} className={styles.container} style={containerStyle}>
 			<div className={styles.textContainer}>
 				<div className={styles.image} style={imageStyle}></div>
-				<div className={styles.title}>{props.title}</div>
+				<div className={styles.title}>{title}</div>
 			</div>
 			<div className={styles.textContainer}>
-				<div className={styles.content}> {props.content}</div>
+				<div className={styles.content}> {content}</div>
 
 				<div className={styles.links}>
-					{props.github && (
-						<a className={styles.github} href={props.github} target="_blank" rel="noreferrer">
+					{github && (
+						<a className={styles.github} href={github} target="_blank" rel="noreferrer">
 							{" "}
 						</a>
 					)}
-					{props.demo && (
-						<a className={styles.demo} href={props.demo} target="_blank" rel="noreferrer">
+					{demo && (
+						<a className={styles.demo} href={demo} target="_blank" rel="noreferrer">
 							{" "}
 						</a>
 					)}

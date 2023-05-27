@@ -5,7 +5,7 @@ import { useMediaQuery } from "../../hooks/useMediaQuery"
 import colors from "../../colors"
 const Navbar = (props) => {
 	const items = ["About.", "Projects.", "Contributions.", "Contact Me."]
-	const isSmall = useMediaQuery(`(max-width: 89.125rem)`)
+	const isSmall = useMediaQuery(`(max-width: 65rem)`)
 	const [selectedItem, setSelectedItem] = useState()
 	const [resetTimeout, setResetTimeout] = useState()
 
@@ -16,8 +16,24 @@ const Navbar = (props) => {
 		},
 		toggle: {
 			height: props.isActive ? "fit-content" : "0px",
-			padding: props.isActive ? "10px" : "0px",
+			padding: props.isActive && isSmall ? "2rem 0 2rem 0" : "0px",
 		},
+	}
+
+	const itemsStyle = {
+		backgroundColor: isSmall ? colors.foregroundLight : "",
+		borderRadius: "0.5rem",
+		padding: "0.5rem",
+	}
+
+	const navbarStyle = {
+		position: "absolute",
+		top: "1.2rem",
+		right: "2rem",
+	}
+
+	const underlineStyle = {
+		bottom: isSmall ? "-10px" : "-20px",
 	}
 
 	const navbarSelectorTextVariants = {
@@ -50,7 +66,7 @@ const Navbar = (props) => {
 
 	return (
 		<AnimateSharedLayout>
-			<motion.nav variants={navbarSelectorVariants} animate="toggle" className={styles.navbar}>
+			<motion.nav variants={navbarSelectorVariants} animate="toggle" className={styles.navbar} style={isSmall ? {} : navbarStyle}>
 				{items.map((item) => {
 					return (
 						<>
@@ -59,12 +75,14 @@ const Navbar = (props) => {
 								variants={navbarSelectorTextVariants}
 								animate="toggle"
 								className={styles.item}
-								style={{ color: colors.background }}
+								style={{ ...itemsStyle, color: colors.background }}
 								href={`#${item.toLowerCase()}`}
 								onMouseOver={() => handleSettingSelectedItem(item)}
 								onMouseLeave={resetSelectedItem}
 							>
-								{selectedItem === item && <motion.div layoutId="navbar" className={styles.underline} style={{ backgroundColor: colors.backgroundLight }}></motion.div>}
+								{selectedItem === item && (
+									<motion.div layoutId="navbar" className={styles.underline} style={{ ...underlineStyle, backgroundColor: colors.backgroundLight }}></motion.div>
+								)}
 								{item}
 							</motion.a>
 						</>
