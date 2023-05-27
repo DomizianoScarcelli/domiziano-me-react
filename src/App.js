@@ -70,10 +70,6 @@ export default function App() {
 			<Container title="Contact me." titleColor={colors.containerTitle}>
 				<ContactForm />
 			</Container>
-
-			<a class="backToTop center-horizontally" id="backToTopButton" href="#topContainer" style={{ backgroundColor: colors.foregroundDark }}>
-				<img src="../public/res/arrow_upward_white_24dp.svg" alt="back to top" />
-			</a>
 		</div>
 	)
 }

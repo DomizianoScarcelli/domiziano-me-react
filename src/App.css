@@ -1,4 +1,10 @@
 /* TODO togli sta roba */
+#root {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
 .justified {
 	/* text-align: left !important; */
 }
@@ -10,14 +16,12 @@
 }
 
 .container {
-	margin: auto;
-	width: clamp(21rem, 50vw, 60vw);
+	width: clamp(21rem, 60vw, 60vw);
 	padding: 2rem 0 2rem 0;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
 	.container {
-		margin: auto;
-		width: clamp(30rem, 80vw, 90vw);
+		width: clamp(21rem, 80vw, 90vw);
 		padding: 2rem 0 2rem 0;
 	}
 }
@@ -30,7 +34,6 @@
 	border-top-right-radius: 100px;
 	border-bottom: 0;
 	background-color: var(--color-yellow);
-	margin: auto;
 }
 
 .expandArrow__image {
@@ -60,55 +63,6 @@
 	padding: 1rem;
 }
 
-.backToTop {
-	visibility: hidden;
-	width: 2rem;
-	height: 2rem;
-	border-radius: 1rem;
-	background-color: var(--color-foreground-medium);
-	cursor: pointer;
-	position: fixed;
-	bottom: 20px;
-	right: 30px;
-	padding: 15px;
-	transition: background-color 300ms;
-}
-
 .backToTop:hover {
 	background-color: var(--color-foreground-medium);
-}
-
-@media screen and (max-width: 1200px) {
-	.centerContainer {
-		width: 50vw;
-	}
-
-	.header {
-		width: 65vw;
-	}
-
-	.container {
-		padding-left: 0;
-		padding-right: 0;
-	}
-}
-
-@media screen and (max-width: 1160px) {
-	.headerFirstContainer {
-		flex-direction: column;
-	}
-
-	.headerTextContainer {
-		width: 60vw;
-	}
-	.centerContainer {
-		width: 60vw;
-		min-width: 350px;
-	}
-
-	.submitButton {
-		margin-right: 4rem;
-		margin-left: 4rem;
-		width: auto;
-	}
 }
