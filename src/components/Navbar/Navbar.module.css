@@ -2,7 +2,8 @@
 	font-size: 1.125rem;
 	display: flex;
 	flex-direction: row;
-	width: 25%;
+	flex-wrap: wrap;
+	justify-content: center;
 	min-width: fit-content;
 	margin: auto;
 	gap: 1rem;
