@@ -7,7 +7,7 @@ import Skills from "./components/Skills/Skills"
 import colors from "./colors"
 import Contributions from "./components/Contributions/Contributions"
 
-export default function App() {
+function App() {
 	return (
 		<div class="container center-vertically" id="topContainer">
 			<Header />
@@ -23,10 +23,34 @@ export default function App() {
 				<p className="contentContainer__description noBottomPadding">These are some project I developed, both for learning reasons or as university assignment</p>
 				<div class="contentContainer__body" id="contentContainer__body">
 					<Project
-						image="wordsearch-2.png"
-						title="Word Search Generator"
-						content="Web app written using React with Typescrit that uses a backtracking algorithm to generate a Word Search puzzle of any dimension from a set of words"
-						github="https://github.com/DomizianoScarcelli/word-find-puzzle"
+						image="spotify.webp"
+						title="Spotify Playlist Continuation"
+						content="Implemented 3 different techniques to solve the Spotify Million Dataset Playlist Challenge, using Pyspark in order for the data to work on a distributed system, and PyTorch with Petastorm to build a Neural Network"
+						github="https://github.com/DomizianoScarcelli/spotify-recommender"
+					/>
+					<Project
+						image="tablefork.png"
+						title="Voicefork"
+						content="TheFork mobile app clone made with React Native whose backend is implemented using a microservices structure. Deployed on AWS using Terraform and load tested with k6"
+						github="https://github.com/DomizianoScarcelli/voicefork"
+					/>
+					<Project
+						image="alexa.png"
+						title="Voicefork Alexa Skill"
+						content="Alexa skill made with Typescript using the same backend made for Voicefork"
+						github="https://github.com/DomizianoScarcelli/voicefork-alexa-skill"
+					/>
+					<Project
+						image="drones.png"
+						title="Q-Learning Routing Protocol for Drones"
+						content="Implemented a routing protocol for UAV ad-hoc wireless networks using Q-learning inside of a Drones simulator"
+						github="https://github.com/DomizianoScarcelli/voicefork-alexa-skill"
+					/>
+					<Project
+						image="biometric-bites.png"
+						title="Biometrics Bites"
+						content="The project consists in a Web app that allows biometric access to the university cafeteria with face recognition. The frontend is developed with React, the backend with Django."
+						github="https://github.com/DomizianoScarcelli/BiometricsBites"
 					/>
 					<Project
 						image="pathfinder-visualizer-2.png"
@@ -73,3 +97,5 @@ export default function App() {
 		</div>
 	)
 }
+
+export default App

@@ -19,4 +19,11 @@ export const icons = {
 	figma: { name: "Figma", icon: "devicon-figma-plain" },
 	adobexd: { name: "AdobeXD", icon: "devicon-xd-plain" },
 	photoshop: { name: "Photoshop", icon: "devicon-photoshop-plain" },
+	terraform: { name: "Terraform", icon: "devicon-terraform-plain" },
+	aws: { name: "AWS", icon: "devicon-amazonwebservices-plain" },
+	pytorch: { name: "PyTorch", icon: "devicon-pytorch-plain" },
+	pyspark: { name: "PySpark", icon: "devicon-apache-plain" },
+	fastapi: { name: "FastAPI", icon: "devicon-fastapi-plain" },
+	express: { name: "Express", icon: "devicon-express-original" },
+	prisma: { name: "Prisma", icon: "devicon-prisma-plain" },
 }
