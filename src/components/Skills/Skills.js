@@ -63,7 +63,7 @@ const Skills = () => {
 		setCurrentSkills(getAllSkills())
 	}, [])
 	return (
-		<Container title="Skills." titleColor={colors.containerTitle}>
+		<Container title="Skills.">
 			<AnimateSharedLayout>
 				<div className={styles.picker}>
 					{values.map((value) => {
@@ -84,10 +84,9 @@ const Skills = () => {
 				{currentSkills.map((value, index) => {
 					return (
 						<div className={styles.skillsIconContainer}>
-							<motion.i animate={{ scale: [0.8, 1.2, 1] }} transition={{ duration: 0.2 + index / 40 }} className={`${value.icon} colored ${styles.skillsIcon}`}></motion.i>
-							<p className={styles.skillTitle} style={{ color: colors.foregroundMedium }}>
-								{value.name}
-							</p>
+							{/* Add "colored" for color icons */}
+							<i className={`${value.icon} colored ${styles.skillsIcon}`}></i>
+							<p className={styles.skillTitle}>{value.name}</p>
 						</div>
 					)
 				})}

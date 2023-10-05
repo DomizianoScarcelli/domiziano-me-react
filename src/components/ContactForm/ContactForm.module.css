@@ -7,6 +7,14 @@
 	align-items: flex-start;
 	gap: 2rem;
 }
+
+.main_container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
 .field {
 	position: relative;
 	border-radius: 1rem;
@@ -31,13 +39,6 @@
 	font-family: "Inter", sans-serif;
 }
 
-.title {
-	position: absolute;
-	top: -0.85rem;
-	left: 0.75rem;
-	font-size: 1.125rem;
-}
-
 .input {
 	border-width: 0;
 	border-radius: 1rem;
@@ -54,17 +55,20 @@
 .submitButton {
 	width: 7rem;
 	height: 2.5rem;
-	margin: auto auto 1.5rem auto;
+	margin: 1rem 0 1rem 0;
 	border-radius: 0.75rem;
 	text-align: center;
 	display: grid;
 	place-content: center;
 	cursor: pointer;
 	transition: background-color 300ms;
+	background-image: linear-gradient(150deg, #134074 0%, #0b2545 100%);
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+	color: white;
 }
 
 .submitButton:hover {
-	background-color: var(--color-yellow);
+	background-image: linear-gradient(150deg, #0b2545 0%, #134074 100%);
 }
 
 @media screen and (min-width: 1160px) {

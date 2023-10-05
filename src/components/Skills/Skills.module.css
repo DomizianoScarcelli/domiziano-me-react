@@ -3,18 +3,19 @@
 	margin: 0 2rem 2rem 2rem;
 	border-radius: 2rem;
 	font-size: 1.563rem;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
+	display: grid;
 	gap: 2.5rem;
+	grid-auto-rows: minmax(100px, auto);
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust minmax values as needed */
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+	background-image: linear-gradient(150deg, #134074 0%, #13315c 100%);
 }
 
 .row {
 	gap: 1.5rem;
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 }
 
@@ -29,6 +30,10 @@
 
 .skillsIcon {
 	scale: 2;
+	background-color: #134074;
+	border-radius: 100%;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+	padding: 0.5rem;
 }
 .picker {
 	display: flex;
@@ -68,3 +73,21 @@
 	font-size: 1rem;
 	font-weight: 500;
 }
+
+/* @media screen and (max-width: 900px) {
+	.container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.container {
+		grid-template-columns: repeat(4, 1fr);
+	}
+} */

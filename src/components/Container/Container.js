@@ -4,14 +4,7 @@ import colors from "../../colors"
 const Container = (props) => {
 	return (
 		<div className={styles.container} id={`${props.title.toLowerCase()}`} style={{ backgroundColor: colors.foregroundLight, color: colors.background }}>
-			<div
-				className={styles.title}
-				style={{
-					color: props.titleColor,
-				}}
-			>
-				{props.title}
-			</div>
+			<div className={styles.title}>{props.title}</div>
 			{props.children}
 		</div>
 	)
