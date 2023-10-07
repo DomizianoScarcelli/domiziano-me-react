@@ -6,13 +6,16 @@
 	max-height: fit-content;
 	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 	background-image: linear-gradient(150deg, #0b2545 0%, #13315c 100%);
+	display: flex;
+	justify-content: center;
 }
 
 .innerContainer {
 	display: grid;
 	column-gap: 5rem;
-	grid-template-columns: repeat(2, 1fr);
-	width: fit-content;
+	/* grid-template-columns: repeat(2, 1fr); */
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust minmax values as needed */
+	width: 120%;
 }
 
 .title {
