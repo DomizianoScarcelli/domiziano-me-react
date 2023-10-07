@@ -5,7 +5,9 @@ const Container = (props) => {
 	return (
 		<div className={styles.container} id={`${props.title.toLowerCase()}`} style={{ backgroundColor: colors.foregroundLight, color: colors.background }}>
 			<div className={styles.title}>{props.title}</div>
-			<div className={props.grid && styles.innerContainer}>{props.children}</div>
+			<div className={props.grid && styles.innerContainer} style={{ width: "100%" }}>
+				{props.children}
+			</div>
 		</div>
 	)
 }
