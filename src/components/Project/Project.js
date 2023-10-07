@@ -19,32 +19,28 @@ const Project = ({ title, image, content, github, demo }) => {
 		backgroundImage: `url(${imageUrl})`,
 	}
 
-	const containerStyle = {
-		color: colors.foregroundDark,
-		backgroundColor: colors.backgroundLight,
-		flexDirection: containerWidth >= 580 ? "row" : "column",
-	}
-
 	return (
-		<div ref={containerRef} className={styles.container} style={containerStyle}>
-			<div className={styles.textContainer}>
-				<div className={styles.image} style={imageStyle}></div>
-				<div className={styles.title}>{title}</div>
-			</div>
-			<div className={styles.textContainer}>
-				<div className={styles.content}> {content}</div>
+		<div ref={containerRef} className={styles.container}>
+			<div className={styles.innerContainer}>
+				<div className={styles.textContainer}>
+					<div className={styles.image} style={imageStyle}></div>
+					<div className={styles.title}>{title}</div>
+				</div>
+				<div className={styles.textContainer}>
+					<div className={styles.content}> {content}</div>
 
-				<div className={styles.links}>
-					{github && (
-						<a className={styles.github} href={github} target="_blank" rel="noreferrer">
-							{" "}
-						</a>
-					)}
-					{demo && (
-						<a className={styles.demo} href={demo} target="_blank" rel="noreferrer">
-							{" "}
-						</a>
-					)}
+					<div className={styles.links}>
+						{github && (
+							<a className={styles.github} href={github} target="_blank" rel="noreferrer">
+								{" "}
+							</a>
+						)}
+						{demo && (
+							<a className={styles.demo} href={demo} target="_blank" rel="noreferrer">
+								{" "}
+							</a>
+						)}
+					</div>
 				</div>
 			</div>
 		</div>
