@@ -19,7 +19,20 @@ const Skills = () => {
 	}
 	const [currentSkills, setCurrentSkills] = useState([])
 	const [selectedFilter, setSelectedFilter] = useState("All")
+	const [showAll, setShowAll] = useState(false)
 	const selectorWidth = useTextWidth({ text: selectedFilter, font: `1.25rem Inter` }) + 10
+
+	const MAX_ELEMENTS = 10
+
+	const toggleShowMore = () => {
+		if (showAll) {
+			setShowAll(false)
+		} else {
+			setShowAll(true)
+		}
+	}
+
+	const arrowOrientation = showAll ? "rotate(180deg)" : "rotate(0deg)"
 
 	const selectSkillsFromFilter = (filter) => {
 		switch (filter) {
@@ -80,16 +93,23 @@ const Skills = () => {
 					})}
 				</div>
 			</AnimateSharedLayout>
-			<div className={styles.container} style={{ backgroundColor: colors.backgroundLight }}>
-				{currentSkills.map((value, index) => {
-					return (
-						<div className={styles.skillsIconContainer}>
-							{/* Add "colored" for color icons */}
-							<i className={`${value.icon} colored ${styles.skillsIcon}`}></i>
-							<p className={styles.skillTitle}>{value.name}</p>
-						</div>
-					)
-				})}
+			<div className={styles.container}>
+				<div className={styles.innerContainer}>
+					{currentSkills.slice(0, showAll ? -1 : MAX_ELEMENTS).map((value, index) => {
+						return (
+							<div className={styles.skillsIconContainer}>
+								{/* Add "colored" for color icons */}
+								<i className={`${value.icon} colored ${styles.skillsIcon}`}></i>
+								<p className={styles.skillTitle}>{value.name}</p>
+							</div>
+						)
+					})}
+					{currentSkills.length > MAX_ELEMENTS && (
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" className={styles.showMore} style={{ transform: arrowOrientation }} onClick={toggleShowMore}>
+							<path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+						</svg>
+					)}
+				</div>
 			</div>
 		</Container>
 	)

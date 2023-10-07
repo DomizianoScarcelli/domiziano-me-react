@@ -33,7 +33,8 @@ const Navbar = (props) => {
 	}
 
 	const underlineStyle = {
-		bottom: isSmall ? "-10px" : "-20px",
+		bottom: isSmall ? "-10px" : "0px",
+		visibility: isSmall ? "hidden" : "visible",
 	}
 
 	const navbarSelectorTextVariants = {
