@@ -9,11 +9,11 @@ import Contributions from "./components/Contributions/Contributions"
 
 function App() {
 	return (
-		<div class="container center-vertically" id="topContainer">
+		<div className="container center-vertically" id="topContainer">
 			<Header />
 
 			<Container title="About." titleColor={colors.containerTitle}>
-				<p class="justified contentContainer__description">
+				<p className="justified contentContainer__description">
 					I'm a 23 years old Software Engineer passionate about software development, in particular Web and App development, with some interest about anything that's AI.
 					<br /> <br />I obtained my Bachelor's Degree in Computer Science in March 2022 and I'm currently studying for my Master's Degree in CS at the University of Rome "La Sapienza".
 				</p>
@@ -76,8 +76,8 @@ function App() {
 					content="Java GUI app using the Swing library that allows the user to edit an image made of ASCII text using his mouse. The app is based on Trystan's Ascii Panel."
 					github="https://github.com/DomizianoScarcelli/ascii-editor-refactor"
 				/>
-				{/* <div class="expandArrow center-horizontally">
-					<img src="./res/expand_more_black_24dp.svg" alt="" class="expandArrow__image" id="expandArrow" />
+				{/* <div className="expandArrow center-horizontally">
+					<img src="./res/expand_more_black_24dp.svg" alt="" className="expandArrow__image" id="expandArrow" />
 				</div> */}
 			</Container>
 
