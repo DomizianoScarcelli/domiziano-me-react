@@ -122,4 +122,7 @@
 	.container {
 		margin: 3rem;
 	}
+	.showMore {
+		left: 45%;
+	}
 }
