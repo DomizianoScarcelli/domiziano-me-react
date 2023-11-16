@@ -1,7 +1,5 @@
 import React, { useState, useRef, useLayoutEffect } from "react"
 import styles from "./Project.module.css"
-import { motion } from "framer-motion"
-import colors from "../../colors"
 
 const Project = ({ title, image, content, github, demo }) => {
 	const imageUrl = `/project-images/${image}`

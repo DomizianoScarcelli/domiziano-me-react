@@ -1,12 +1,11 @@
 import React from "react"
 import styles from "./Contributions.module.css"
-import colors from "../../colors"
 import { icons } from "../../icons"
 
 const Contributions = () => {
 	return (
 		<div className={styles.container}>
-			<div className={styles.line} style={{ backgroundColor: colors.foregroundMedium }}></div>
+			<div className={styles.line}></div>
 			<ContributionPanel
 				repository={"DamascenoRafael/reminders-menubar"}
 				link={"https://github.com/DamascenoRafael/reminders-menubar/pull/105"}
@@ -40,8 +39,8 @@ const ContributionPanel = ({ repository, title, link, number }) => {
 		window.open(link, "_blank")
 	}
 	return (
-		<div className={styles.panel} style={{ backgroundColor: colors.foregroundMedium }}>
-			<div href={link} className={styles.top} style={{ backgroundColor: colors.foregroundDark, borderColor: colors.foregroundMedium }} onClick={() => openPullRequest(link)}>
+		<div className={styles.panel}>
+			<div href={link} className={styles.top} onClick={() => openPullRequest(link)}>
 				<p>{repository}</p>
 			</div>
 			<p>

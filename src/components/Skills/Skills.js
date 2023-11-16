@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react"
 import styles from "./Skills.module.css"
 import Container from "../Container/Container"
-import colors from "../../colors"
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion"
 import { useTextWidth } from "@imagemarker/use-text-width"
 import { icons } from "./skillsIcons"
+import colors from "../../colors"
 
 const Skills = () => {
 	const values = ["All", "Frontend", "Backend", "Cloud", "Programming Languages", "IDEs", "Other Frameworks", "Other Software"]
@@ -105,9 +105,7 @@ const Skills = () => {
 						return (
 							<>
 								<motion.div className={styles.pickerElement} onClick={() => changeFilter(value)}>
-									{selectedFilter === value && (
-										<motion.div layoutId="filter" className={styles.pickerElementBackground} style={{ width: selectorWidth, backgroundColor: colors.backgroundLight }}></motion.div>
-									)}
+									{selectedFilter === value && <motion.div layoutId="filter" className={styles.pickerElementBackground} style={{ width: selectorWidth }}></motion.div>}
 									<p>{value}</p>
 								</motion.div>
 							</>

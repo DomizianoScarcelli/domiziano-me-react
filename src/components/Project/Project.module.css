@@ -5,7 +5,7 @@
 	font-size: 1.563rem;
 	gap: 2.5rem;
 	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-	background-image: linear-gradient(150deg, #134074 0%, #13315c 100%);
+	background-image: linear-gradient(180deg, var(--color-primary) 0%, var(--color-secondary) 100%);
 	width: 100%;
 	position: relative;
 	height: 100%;
@@ -26,7 +26,6 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	color: white;
 }
 
 .image {
@@ -45,12 +44,14 @@
 	font-size: 1.375rem;
 	padding-bottom: 1rem;
 	text-align: center;
+	color: var(--color-text);
 }
 
 .content {
 	font-size: 1rem;
 	text-align: justify;
 	padding-bottom: 2rem;
+	color: var(--color-text);
 }
 
 .links {
@@ -94,7 +95,7 @@
 
 @media screen and (max-width: 900px) {
 	.container {
-		margin: 1rem;
+		margin: 1.25rem;
 	}
 	.innerContainer {
 		margin: 0 2rem 0 2rem;

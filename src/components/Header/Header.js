@@ -10,9 +10,7 @@ const Header = () => {
 	return (
 		<div className={styles.container}>
 			<div className={styles.titleContainer}>
-				<div className={styles.title} style={{ color: colors.containerTitle }}>
-					Domiziano.
-				</div>
+				<div className={styles.title}>Domiziano.</div>
 
 				<HamburgerMenu
 					isActive={isActive}

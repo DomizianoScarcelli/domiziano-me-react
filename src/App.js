@@ -12,14 +12,14 @@ function App() {
 		<div className="container center-vertically" id="topContainer">
 			<Header />
 
-			<Container title="About." titleColor={colors.containerTitle}>
+			<Container title="About.">
 				<p className="justified contentContainer__description">
 					I'm a 23 years old Software Engineer passionate about software development, in particular Web and App development, with some interest about anything that's AI.
 					<br /> <br />I obtained my Bachelor's Degree in Computer Science in March 2022 and I'm currently studying for my Master's Degree in CS at the University of Rome "La Sapienza".
 				</p>
 			</Container>
 
-			<Container title="Projects." titleColor={colors.containerTitle} grid>
+			<Container title="Projects." grid>
 				{/* <p className="contentContainer__description noBottomPadding">These are some project I developed, both for learning reasons or as university assignment</p> */}
 				<Project
 					image="spotify.webp"
@@ -83,13 +83,13 @@ function App() {
 
 			<Skills />
 
-			<Container title="Contributions." titleColor={colors.containerTitle}>
+			<Container title="Contributions." titleColor={colors.text}>
 				<p className="contentContainer__description noBottomPadding">Open source code is very important, so whenever I can I try to contribute to some projects on GitHub.</p>
 
 				<Contributions />
 			</Container>
 
-			<Container title="Contact me." titleColor={colors.containerTitle}>
+			<Container title="Contact me." titleColor={colors.text}>
 				<ContactForm />
 			</Container>
 		</div>

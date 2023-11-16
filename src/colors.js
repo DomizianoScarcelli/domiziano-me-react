@@ -1,11 +1,9 @@
 const colors = {
-	containerTitle: "#eef4ed",
-	containerBody: "#0b2545",
-	background: "#eef4ed",
-	foregroundDark: "#0b2545",
-	foregroundMedium: "#13315c",
-	foregroundLight: "#134074",
-	backgroundLight: "#8da9c4",
+	background: "#000000",
+	primary: "#291e6b",
+	secondary: "#0f0b28",
+	accent: "#4b38c7",
+	text: "#e9e7f8",
 }
 
 export default colors

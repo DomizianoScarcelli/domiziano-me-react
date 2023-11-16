@@ -26,26 +26,11 @@
 	}
 }
 
-.expandArrow {
-	cursor: pointer;
-	width: 4rem;
-	height: 2rem;
-	border-top-left-radius: 100px;
-	border-top-right-radius: 100px;
-	border-bottom: 0;
-	background-color: var(--color-yellow);
-}
-
-.expandArrow__image {
-	width: 2rem;
-	height: 2rem;
-	transition: 300ms;
-}
-
 .contentContainer__description {
 	font-size: 1.25rem;
 	padding: 2rem;
 	text-align: center;
+	color: var(--color-text);
 }
 
 .noBottomPadding {

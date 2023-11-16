@@ -48,6 +48,11 @@
 	flex-direction: row;
 	font-size: 3.125rem;
 	padding-bottom: 0.5rem;
+	background: linear-gradient(120deg, var(--color-text), var(--color-accent));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: purple;
 }
 
 .description {

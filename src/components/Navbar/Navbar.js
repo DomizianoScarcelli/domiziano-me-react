@@ -76,14 +76,12 @@ const Navbar = (props) => {
 								variants={navbarSelectorTextVariants}
 								animate="toggle"
 								className={styles.item}
-								style={{ ...itemsStyle, color: colors.background }}
+								style={{ ...itemsStyle }}
 								href={`#${item.toLowerCase()}`}
 								onMouseOver={() => handleSettingSelectedItem(item)}
 								onMouseLeave={resetSelectedItem}
 							>
-								{selectedItem === item && (
-									<motion.div layoutId="navbar" className={styles.underline} style={{ ...underlineStyle, backgroundColor: colors.backgroundLight }}></motion.div>
-								)}
+								{selectedItem === item && <motion.div layoutId="navbar" className={styles.underline} style={{ ...underlineStyle }}></motion.div>}
 								{item}
 							</motion.a>
 						</>

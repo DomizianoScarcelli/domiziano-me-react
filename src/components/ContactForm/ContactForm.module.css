@@ -20,7 +20,7 @@
 	border-radius: 1rem;
 	height: 3rem;
 	width: 30%;
-	background-color: var(--color-main-background);
+	color: var(--color-text);
 }
 
 .container > * {
@@ -30,7 +30,6 @@
 .bigField {
 	width: calc(100% - 1.75rem * 2 - 2rem);
 	height: 10rem;
-	/* padding-top: 1rem; */
 }
 
 .largeModule {
@@ -46,10 +45,12 @@
 	outline: none;
 	padding: 0 1rem 0 1rem;
 	font-size: 1.125rem;
+	color: var(--color-background);
 }
 
 .largeModule.input {
 	padding-top: 1rem;
+	color: var(--color-background);
 }
 
 .submitButton {
@@ -62,13 +63,13 @@
 	place-content: center;
 	cursor: pointer;
 	transition: background-color 300ms;
-	background-image: linear-gradient(150deg, #134074 0%, #0b2545 100%);
+	background: linear-gradient(120deg, var(--color-primary), var(--color-accent));
 	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-	color: white;
+	color: var(--color-text);
 }
 
 .submitButton:hover {
-	background-image: linear-gradient(150deg, #0b2545 0%, #134074 100%);
+	background: linear-gradient(120deg, var(--color-primary), var(--color-secondary));
 }
 
 @media screen and (min-width: 1160px) {
