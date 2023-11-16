@@ -78,7 +78,7 @@ $shooting-time: 4000ms;
 	@for $i from 1 through 20 {
 		&:nth-child(#{$i}) {
 			$delay: random(9999) + 0ms;
-			top: calc(50% - #{random(1000) - 500px});
+			top: calc(50% - #{random(1500) - 500px});
 			left: calc(50% - #{random(1500) - 500px});
 			animation-delay: $delay;
 			opacity: random(50) / 100 + 0.5;
