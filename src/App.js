@@ -39,23 +39,36 @@ function App() {
 
 				<Container title="About.">
 					<p className="justified contentContainer__description">
-						I'm a 23 years old Software Engineer passionate about software development, in particular Web and App development, with some interest about anything that's AI.
-						<br /> <br />I obtained my Bachelor's Degree in Computer Science in March 2022 and I'm currently studying for my Master's Degree in CS at the University of Rome "La Sapienza".
+						I'm a 24 years old <b>Software Engineer</b> passionate in <b>Web</b> and <b>Mobile</b> development. During the last few years I've been always more interesed in{" "}
+						<b>Deep Learning</b>.
+						<br /> <br />I obtained my Bachelor's Degree in <b>Computer Science</b> in March 2022 and I'm currently studying for my <b>Master's Degree</b> in CS at the University of Rome
+						"La Sapienza".
 					</p>
 				</Container>
 
 				<Container title="Projects." grid>
 					{/* <p className="contentContainer__description noBottomPadding">These are some project I developed, both for learning reasons or as university assignment</p> */}
+					{/* TODO: Put the content as a child and not as a prop*/}
 					<Project
 						image="spotify.webp"
 						title="Spotify Playlist Continuation"
-						content="Implemented 3 different techniques to solve the Spotify Million Dataset Playlist Challenge, using Pyspark in order for the data to work on a distributed system, and PyTorch with Petastorm to build a Neural Network"
+						content={
+							<p>
+								Distributed recommender system on a dataset of 100K playlists for the <a href="daje">Spotify Playlist Continuation Challenge 2018</a> implemented using <b>PySpark</b>,{" "}
+								<b>PyTorch</b> and <b>Petastorm</b>.
+							</p>
+						}
 						github="https://github.com/DomizianoScarcelli/spotify-recommender"
 					/>
 					<Project
 						image="tablefork.png"
 						title="Voicefork"
-						content="TheFork mobile app clone made with React Native whose backend is implemented using a microservices structure. Deployed on AWS using Terraform and load tested with k6"
+						content={
+							<p>
+								TheFork mobile app clone created with <a>React Native</a>, whose backend is structured in microservices and deployed on <a>AWS</a>. The application is containerized
+								with <a>Docker</a> and load tested with <a>k6</a>. <br />
+							</p>
+						}
 						github="https://github.com/DomizianoScarcelli/voicefork"
 					/>
 					<Project
@@ -109,7 +122,10 @@ function App() {
 				<Skills />
 
 				<Container title="Contributions." titleColor={colors.text}>
-					<p className="contentContainer__description noBottomPadding">Open source code is very important, so whenever I can I try to contribute to some projects on GitHub.</p>
+					<p className="contentContainer__description noBottomPadding">
+						I love open source software, and because of that I try to contribute to it whenever I can, in order to learn something new about a specific technology, and to see how other
+						people deal with their codebases, especially if it involves many contributors. These are some contributions I've made over the years.
+					</p>
 
 					<Contributions />
 				</Container>

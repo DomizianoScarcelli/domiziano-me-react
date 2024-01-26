@@ -5,8 +5,20 @@
 	justify-content: center;
 	flex-direction: column;
 }
-.justified {
-	/* text-align: left !important; */
+
+b {
+	color: var(--color-bright-accent);
+}
+
+a {
+	color: var(--color-bright-accent);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--color-accent);
+	text-decoration: underline;
 }
 .center-vertically {
 	display: flex;
