@@ -56,7 +56,7 @@ a:hover {
 	flex-wrap: wrap;
 	flex-basis: 100%;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
 	padding: 1rem;
 }
 

@@ -6,6 +6,7 @@ import Header from "./components/Header/Header"
 import Skills from "./components/Skills/Skills"
 import colors from "./colors"
 import Contributions from "./components/Contributions/Contributions"
+import ResourceTab from "./components/PublicResources/ResourceTab"
 
 function App() {
 	return (
@@ -44,6 +45,14 @@ function App() {
 						<br /> <br />I obtained my Bachelor's Degree in <b>Computer Science</b> in March 2022 and I'm currently studying for my <b>Master's Degree</b> in CS at the University of Rome
 						"La Sapienza".
 					</p>
+				</Container>
+
+				<Container title="Public Resources.">
+					<p className="contentContainer__description noBottomPadding">These are some resources I decided to publish, since they may be useful for many other people</p>
+					<div className="gap contentContainer__body">
+						<ResourceTab title="Python Exercises" image="python_logo.webp" demo="https://python-exercises.netlify.app/" />
+						<ResourceTab title="University Notes" image="graduation.png" demo="https://domiziano-cs-notes.netlify.com" />
+					</div>
 				</Container>
 
 				<Container title="Projects." grid>
