@@ -9,6 +9,9 @@
 	display: flex;
 	justify-content: center;
 	opacity: 0.9;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
 }
 
 .innerContainer {
@@ -19,6 +22,9 @@
 	width: 120%;
 	opacity: 1;
 }
+.noExpand {
+	grid-template-columns: repeat(2, 1fr) !important;
+}
 
 .title {
 	font-weight: 500;
@@ -27,4 +33,10 @@
 	left: 1.5rem;
 	font-size: 2.5rem;
 	color: var(--color-text);
+}
+
+@media screen and (max-width: 900px) {
+	.noExpand {
+		grid-template-columns: repeat(1, 1fr) !important;
+	}
 }

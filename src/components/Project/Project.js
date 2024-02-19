@@ -1,17 +1,17 @@
-import React, { useState, useRef, useLayoutEffect } from "react"
+import React, { useRef } from "react"
 import styles from "./Project.module.css"
 
-const Project = ({ title, image, content, github, demo }) => {
+const Project = ({ title, image, children, github, demo, video }) => {
 	const imageUrl = `/project-images/${image}`
 	const containerRef = useRef()
-	const [containerWidth, setContainerWidth] = useState()
+	// const [containerWidth, setContainerWidth] = useState()
 
-	useLayoutEffect(() => {
-		function updateContainerWidth() {
-			setContainerWidth(containerRef.current.offsetWidth)
-		}
-		window.addEventListener("resize", updateContainerWidth)
-	}, [])
+	// useLayoutEffect(() => {
+	// 	function updateContainerWidth() {
+	// 		setContainerWidth(containerRef.current.offsetWidth)
+	// 	}
+	// 	window.addEventListener("resize", updateContainerWidth)
+	// }, [])
 
 	const imageStyle = {
 		backgroundImage: `url(${imageUrl})`,
@@ -25,7 +25,7 @@ const Project = ({ title, image, content, github, demo }) => {
 					<div className={styles.title}>{title}</div>
 				</div>
 				<div className={styles.textContainer}>
-					<div className={styles.content}> {content}</div>
+					<div className={styles.content}> {children}</div>
 
 					<div className={styles.links}>
 						{github && (
@@ -35,6 +35,11 @@ const Project = ({ title, image, content, github, demo }) => {
 						)}
 						{demo && (
 							<a className={styles.demo} href={demo} target="_blank" rel="noreferrer">
+								{" "}
+							</a>
+						)}
+						{video && (
+							<a className={styles.video} href={video} target="_blank" rel="noreferrer">
 								{" "}
 							</a>
 						)}

@@ -82,6 +82,10 @@
 	background-image: url(../../../public/links-icon/demo.svg);
 }
 
+.video {
+	background-image: url(../../../public/links-icon/video.svg);
+}
+
 @media screen and (max-width: 1050px) {
 	/* .container {
 		flex-direction: column;

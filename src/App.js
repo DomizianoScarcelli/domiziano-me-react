@@ -47,82 +47,75 @@ function App() {
 					</p>
 				</Container>
 
-				<Container title="Public Resources.">
-					<p className="contentContainer__description noBottomPadding">These are some resources I decided to publish, since they may be useful for many other people</p>
-					<div className="gap contentContainer__body">
-						<ResourceTab title="Python Exercises" image="python_logo.webp" demo="https://python-exercises.netlify.app/" />
-						<ResourceTab title="University Notes" image="graduation.png" demo="https://domiziano-cs-notes.netlify.com" />
-					</div>
+				<Container title="Resources." description="These are some resources I decided to publish, since they may be useful for many other people" grid noExpand>
+					<ResourceTab title="Python Exercises" image="python_logo.webp" demo="https://python-exercises.netlify.app/" />
+					<ResourceTab title="University Notes" image="graduation.png" demo="https://domiziano-cs-notes.netlify.com" />
 				</Container>
 
 				<Container title="Projects." grid>
-					{/* <p className="contentContainer__description noBottomPadding">These are some project I developed, both for learning reasons or as university assignment</p> */}
-					{/* TODO: Put the content as a child and not as a prop*/}
+					<Project image="skin-lesion.png" title="Skin Lesion Classification" github="https://github.com/DomizianoScarcelli/skin-lesion-classification">
+						<p>
+							Implemented different skin lesion models on the <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T">HAM10000</a> dataset using{" "}
+							<b>PyTorch</b>. We used <a href="https://github.com/huangzh13/StyleGAN.pytorch">StyleGAN</a> to generate synthetic data and{" "}
+							<a href="https://github.com/facebookresearch/segment-anything">SAM</a> to segment the images to achive better performance. There is also a re-implementation of the{" "}
+							<a href="https://link.springer.com/article/10.1007/s10489-022-03320-x">MSLANet paper</a> with some modification to improve performances
+						</p>
+					</Project>
 					<Project
 						image="spotify.webp"
 						title="Spotify Playlist Continuation"
-						content={
-							<p>
-								Distributed recommender system on a dataset of 100K playlists for the <a href="daje">Spotify Playlist Continuation Challenge 2018</a> implemented using <b>PySpark</b>,{" "}
-								<b>PyTorch</b> and <b>Petastorm</b>.
-							</p>
-						}
 						github="https://github.com/DomizianoScarcelli/spotify-recommender"
-					/>
-					<Project
-						image="tablefork.png"
-						title="Voicefork"
-						content={
-							<p>
-								TheFork mobile app clone created with <a>React Native</a>, whose backend is structured in microservices and deployed on <a>AWS</a>. The application is containerized
-								with <a>Docker</a> and load tested with <a>k6</a>. <br />
-							</p>
-						}
-						github="https://github.com/DomizianoScarcelli/voicefork"
-					/>
-					<Project
-						image="alexa.png"
-						title="Voicefork Alexa Skill"
-						content="Alexa skill made with Typescript using the same backend made for Voicefork"
-						github="https://github.com/DomizianoScarcelli/voicefork-alexa-skill"
-					/>
-					<Project
-						image="drones.png"
-						title="Q-Learning Routing Protocol for Drones"
-						content="Implemented a routing protocol for UAV ad-hoc wireless networks using Q-learning inside of a Drones simulator"
-						github="https://github.com/DomizianoScarcelli/voicefork-alexa-skill"
-					/>
-					<Project
-						image="biometric-bites.png"
-						title="Biometrics Bites"
-						content="The project consists in a Web app that allows biometric access to the university cafeteria with face recognition. The frontend is developed with React, the backend with Django."
-						github="https://github.com/DomizianoScarcelli/BiometricsBites"
-					/>
-					<Project
-						image="pathfinder-visualizer-2.png"
-						title="Pathfinder Visualizer"
-						content="Web app that allows the user to select two  points and see the shortest path between them.
-							The app is developed using p5.js"
-						github="https://github.com/DomizianoScarcelli/pathfinder-visualizer"
-					/>
-					<Project
+						video="https://www.youtube.com/watch?v=6SfWoqsLD08"
+					>
+						<p>
+							Distributed recommender system on a dataset of 100K playlists for the <a href="daje">Spotify Playlist Continuation Challenge 2018</a> implemented using <b>PySpark</b>,{" "}
+							<b>PyTorch</b> and <b>Petastorm</b>.
+						</p>
+					</Project>
+					<Project image="tablefork.png" title="Voicefork" github="https://github.com/DomizianoScarcelli/voicefork" video="https://www.youtube.com/watch?v=0-LgkOZpavc">
+						<p>
+							TheFork mobile app clone created with <a href="https://reactnative.dev/">React Native</a>, whose backend is structured in microservices and deployed on <b>AWS</b>. The
+							application is containerized with <a href="https://www.docker.com/">Docker</a> and load tested with <a href="https://k6.io/">k6</a>. <br />
+						</p>
+					</Project>
+					<Project image="alexa.png" title="Voicefork Alexa Skill" github="https://github.com/DomizianoScarcelli/voicefork-alexa-skill" video="https://www.youtube.com/watch?v=PHmqiMtnwJc">
+						<p>
+							<b>Alexa</b> skill made with Typescript using the same backend made for Voicefork
+						</p>
+					</Project>
+					<Project image="drones.png" title="Q-Learning Routing Protocol for Drones" github="https://github.com/DomizianoScarcelli/voicefork-alexa-skill">
+						<p>
+							Implemented a routing protocol for UAV ad-hoc wireless networks using <b>Q-learning</b> inside of a Drone simulator
+						</p>
+					</Project>
+					<Project image="biometric-bites.png" title="Biometrics Bites" github="https://github.com/DomizianoScarcelli/BiometricsBites">
+						<p>
+							Developed a Web app that allows biometric access to the university cafeteria with <b>face recognition.</b> The frontend is developed with <b>React</b>, the backend with
+							<b> Django</b>.
+						</p>
+					</Project>
+					<Project image="pathfinder-visualizer-2.png" title="Pathfinder Visualizer" content="" github="https://github.com/DomizianoScarcelli/pathfinder-visualizer">
+						<p>
+							Web app that allows the user to select two points and see the shortest path between them. The app is developed using <a href="https://p5js.org/">p5.js</a>
+						</p>
+					</Project>
+					{/* <Project
 						image="workout-tracker-2.png"
 						title="Workout Tracker"
 						content="Web app that allows the user to track their workout progress. The user can also see the analytics for a selected period of time. The app is developed using the MERN stack."
 						github="https://github.com/DomizianoScarcelli/workout-tracker"
-					/>
-					<Project
-						image="gc-logo.png"
-						title="GeneroCity"
-						content="Developed during my internship at University of La Sapienza, it's a smart parking native Android app that allows the users to swap parking spots."
-						demo="https://www.generocity.it/"
-					/>
-					<Project
-						image="ascii-editor-gui-3.png"
-						title="ASCII Editor GUI"
-						content="Java GUI app using the Swing library that allows the user to edit an image made of ASCII text using his mouse. The app is based on Trystan's Ascii Panel."
-						github="https://github.com/DomizianoScarcelli/ascii-editor-refactor"
-					/>
+					/> */}
+					<Project image="gc-logo.png" title="GeneroCity" demo="https://www.generocity.it/">
+						<p>
+							Developed during my internship at University of La Sapienza, it's a smart parking native <b>Android app </b>that allows the users to swap parking spots."
+						</p>
+					</Project>
+					<Project image="ascii-editor-gui-3.png" title="ASCII Editor GUI" content="" github="https://github.com/DomizianoScarcelli/ascii-editor-refactor">
+						<p>
+							Java GUI app using the <b>Swing library </b>that allows the user to edit an image made of ASCII text using his mouse. The app is based on{" "}
+							<a href="https://github.com/trystan/AsciiPanel">Trystan's Ascii Panel</a>.
+						</p>
+					</Project>
 					{/* <div className="expandArrow center-horizontally">
 					<img src="./res/expand_more_black_24dp.svg" alt="" className="expandArrow__image" id="expandArrow" />
 				</div> */}
