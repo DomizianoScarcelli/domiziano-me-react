@@ -52,9 +52,9 @@
 
 .content {
 	font-size: 1rem;
-	text-align: justify;
 	padding-bottom: 2rem;
 	color: var(--color-text);
+	text-align: center;
 }
 
 .links {

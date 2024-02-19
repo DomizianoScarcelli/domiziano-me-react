@@ -57,7 +57,7 @@ function App() {
 						<p>
 							Implemented different skin lesion models on the <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T">HAM10000</a> dataset using{" "}
 							<b>PyTorch</b>. We used <a href="https://github.com/huangzh13/StyleGAN.pytorch">StyleGAN</a> to generate synthetic data and{" "}
-							<a href="https://github.com/facebookresearch/segment-anything">SAM</a> to segment the images to achive better performance. There is also a re-implementation of the{" "}
+							<a href="https://github.com/facebookresearch/segment-anything">SAM</a> to segment the images to achieve better performance. There is also a re-implementation of the{" "}
 							<a href="https://link.springer.com/article/10.1007/s10489-022-03320-x">MSLANet paper</a> with some modification to improve performances
 						</p>
 					</Project>
