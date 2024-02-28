@@ -19,7 +19,7 @@ const injectGA = () => {
 
 ReactDOM.render(
 	<React.StrictMode>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID" />
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-07JGETDCYE" />
 		<script>{injectGA()}</script>
 		<App />
 	</React.StrictMode>,
